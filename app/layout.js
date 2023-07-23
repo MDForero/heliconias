@@ -87,11 +87,11 @@ export default function RootLayout({ children }) {
             </Link>
           </div>
         </nav>
-        <section className="relative overflow-hidden">
-          <a href='#' className='fixed  bottom-2 right-2  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-5xl'/></a>
+        <section className=" overflow-hidden">
+          <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-5xl'/></a>
           {children}
         </section>
-        <footer className="bg-white dark:bg-gray-200 pt-4 pb-8 xl:pt-8">
+        <footer className="bg-white  dark:bg-gray-200 pt-4 pb-8 xl:pt-8">
           <div className="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-800">
             <ul className="flex flex-wrap justify-center pb-8 text-lg font-light">
               <li className="w-1/2 md:w-1/3 lg:w-1/3">
