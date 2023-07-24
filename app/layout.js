@@ -33,10 +33,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
 
-        <nav className="relative bg-gray-300  z-50 flex flex-wrap items-center justify-between p-4 ">
+        <nav className="relative bg-gray-300 fixed  z-50 flex flex-wrap items-center justify-between p-4 ">
           <div className="w-auto  md:order-2 md:w-1/5 md:text-center">
             <Link className="text-xl font-semibold text-gray-800 font-heading" href="/">
-              <Image src={logo} alt="logo" className="w-40 md:mx-auto" />
+              <Image src={logo} alt="logo" className="w-32 md:mx-auto" />
             </Link>
           </div>
           <div className="block md:hidden">

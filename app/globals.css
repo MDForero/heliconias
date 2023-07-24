@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.bg-inicio{
+  background: url("../public/fondos/fondoinicio.JPG") no-repeat;
+  background-size: cover;
+}
