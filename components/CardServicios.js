@@ -12,4 +12,4 @@ const CardServicios = ({ data }) => {
     )
 }
 
-export default CardServiciosclassName='rounded-full bg-gray-400/80'
+export default CardServicios
