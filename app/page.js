@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from '../public/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import Team from '../components/Team'
 
 export default function Home() {
   return (
@@ -20,7 +21,10 @@ export default function Home() {
 
       </main>
       <Valores />
-      <div className='flex flex-row flex-wrap justify-center '>
+      <div>
+        <Team/>
+      </div>
+      <div className='flex flex-col gap-12 justify-center '>
         <iframe src="https://www.instagram.com/p/CjzCPN-D3jD/embed" width="540" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flasheliconiascentroagroturistico%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1376175039861911" className="h-[600px] w-[500px] border-none overflow-hidden" allowFullScreen="true"></iframe>
       </div>
