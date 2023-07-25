@@ -10,6 +10,7 @@ import galeria8 from '../public//galeria/galeria8.JPG';
 import galeria9 from '../public//galeria/galeria9.JPG';
 import galeria10 from '../public//galeria/galeria10.JPG';
 import galeria11 from '../public//galeria/galeria11.JPG';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export const imgs = [
     {
@@ -56,4 +57,101 @@ export const imgs = [
         src: galeria11,
         alt: 'galeria11'
     },
+]
+
+export const colaboradores = [
+    {
+        nombre: "Eulalia salinas ",
+        cargo: "Chef ejecutivo",
+        descripcion: "Chef ejecutivo con mas de 40 años de experiencia, es el profesional en jefe dentro de la cocina, responsable de crear el menú y supervisar que los platos cumplan con altos estándares de calidad.diseña los menús de acuerdo con el concepto o tema del restaurante para brindar una experiencia valiosa a nuestros clientes.",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+    {
+        nombre: "Armando Martínez",
+        cargo: "Recepcionista",
+        descripcion: "Recepcionista, organizar y gestionar el área de recepción, dar la acogida, asistir y atender el huésped desde su ingreso hasta su salida del establecimiento.",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+    {
+        nombre: "Diego Martínez",
+        cargo: "Gerente general",
+        descripcion: "Gerente general y marketing responsable del funcionamiento general del hotel y de la calidad del servicio que se está ofreciendo a los huéspedes, esponsable de maximizar los ingresos de un hotel.El gerente lo logra mediante el desarrollo de programas para aumentar la ocupación y hacer un uso rentable de sus instalaciones de alojamiento",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+    {
+        nombre: "Jair Vargas",
+        cargo: "Mesero",
+        descripcion: "una pieza clave en la atención al cliente, con empatía y capacidad de interactuar con nuestros clientes que se encarga de procesar pedidos y servirlos en la mesa, así como de atender a los clientes en la barra del restaurante.",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+
+
+
+    {
+        nombre: "Marina Ibáñez ",
+        cargo: "Camarera",
+        descripcion: "camarera de pisos es la persona encargada de la limpieza y arreglo de las habitaciones, así como de las zonas nobles, pasillos, escaleras, otros departamentos y dependencias del hotel",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+    {
+        nombre: "Antonio Díaz ",
+        cargo: "Jardinero",
+        descripcion: "Nuestro jardinero encargado de embellecer las zonas verdes y darle vida a nuestros cultivos",
+        redes:[
+            {
+                icon: faFacebook,
+                href:"#"
+            },
+            {
+                icon: faInstagram,
+                href:'#'
+            }
+        ]
+    },
+
 ]
