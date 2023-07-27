@@ -60,8 +60,8 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={inter.className}>
 
-        <nav className="relative bg-nav text-xl font-normal fixed  z-50 flex flex-wrap items-center justify-between p-4 ">
-          <div className="w-auto  md:order-2 md:w-1/5 md:text-center">
+        <nav className="relative bg-nav text-xl font-normal z-50 flex flex-wrap items-center justify-between p-4 ">
+          <div className=" w-auto  md:order-2 md:w-1/5 md:text-center">
             <Link className="text-xl font-semibold  font-heading" href="/">
               <Image src={logo} alt="logo" width={100} className="mx-auto" />
             </Link>
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
            
           </div>
         </nav>
-        <section className="bg-gray-200 text-black overflow-hidden">
+        <section className="bg-gray-50 text-black overflow-hidden">
           <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
           {children}
         </section>
