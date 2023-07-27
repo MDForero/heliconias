@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import defaultservices from '../public/defaultservices.JPG'
+import defaultservices from '../public/defaultservices.jpg'
 const CardServicios = ({ data }) => {
     return (
         <div className='flex flex-row odd:flex-row-reverse py-12 flex-wrap justify-evenly text-justify  item-center border-b bg-red-500 odd:bg-green-500'>

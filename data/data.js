@@ -1,15 +1,15 @@
 // imagenes para la galeria
-import galeria1 from '../public//galeria/galeria1.JPG';
-import galeria2 from '../public//galeria/galeria2.JPG';
-import galeria3 from '../public//galeria/galeria3.JPG';
-import galeria4 from '../public//galeria/galeria4.JPG';
-import galeria5 from '../public//galeria/galeria5.JPG';
-import galeria6 from '../public//galeria/galeria6.JPG';
-import galeria7 from '../public//galeria/galeria7.JPG';
-import galeria8 from '../public//galeria/galeria8.JPG';
-import galeria9 from '../public//galeria/galeria9.JPG';
-import galeria10 from '../public//galeria/galeria10.JPG';
-import galeria11 from '../public//galeria/galeria11.JPG';
+import galeria1 from '../public/galeria/galeria1.jpg';
+import galeria2 from '../public/galeria/galeria2.jpg';
+import galeria3 from '../public/galeria/galeria3.jpg';
+import galeria4 from '../public/galeria/galeria4.jpg';
+import galeria5 from '../public/galeria/galeria5.jpg';
+import galeria6 from '../public/galeria/galeria6.jpg';
+import galeria7 from '../public/galeria/galeria7.jpg';
+import galeria8 from '../public/galeria/galeria8.jpg';
+import galeria9 from '../public/galeria/galeria9.jpg';
+import galeria10 from '../public/galeria/galeria10.jpg';
+import galeria11 from '../public/galeria/galeria11.jpg';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export const imgs = [

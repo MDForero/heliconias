@@ -1,6 +1,7 @@
 import React from 'react'
 import { colaboradores } from '../data/data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
 
 const Team = () => {
     return (

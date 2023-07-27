@@ -4,10 +4,14 @@ import mision from "../../public/mision.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTelevision } from "@fortawesome/free-solid-svg-icons";
 import Valores from "@/components/Valores";
-import fondo from "../../public/fondos/nosotros.JPG";
+import fondo from "../../public/fondos/nosotros.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 
+export const metadata = {
+    title: "Nosotros",
+    description: "Conoce más sobre nosotros",
+};
 
 export default function page() {
     return (

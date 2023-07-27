@@ -1,12 +1,12 @@
 import Acomodaciones from "@/components/Acomodaciones";
-import vista1 from "../../public/habitaciones/IMG_1157.JPG";
-import vista2 from "../../public/habitaciones/IMG_1158.JPG";
-import vista3 from "../../public/habitaciones/IMG_1161.JPG";
-import vista4 from "../../public/habitaciones/IMG_1170.JPG";
-import vista5 from "../../public/habitaciones/IMG_1172.JPG";
-import heliconia from "../../public/mision.JPG"
+import vista1 from "../../public/habitaciones/IMG_1157.jpg";
+import vista2 from "../../public/habitaciones/IMG_1158.jpg";
+import vista3 from "../../public/habitaciones/IMG_1161.jpg";
+import vista4 from "../../public/habitaciones/IMG_1170.jpg";
+import vista5 from "../../public/habitaciones/IMG_1172.jpg";
+import heliconia from "../../public/mision.jpg"
 import Image from "next/image";
-import fondo from "../../public/fondos/alojamiento.JPG";
+import fondo from "../../public/fondos/alojamiento.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 
@@ -75,6 +75,12 @@ const acomodaciones = [
         }]
     },
 ]
+
+export const metadata = {
+    title: "alojamientos",
+    description: "Habitaciones en el Centro Agroecoturístico Las Heliconias",
+    keywords: ['habitaciones', 'alojamiento', 'hotel', 'centro agroecoturístico', 'las heliconias']
+}
 
 export default function page() {
     return (

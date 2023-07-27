@@ -110,7 +110,11 @@ const menu = [
             }]
     },
 ]
-
+export const metadata = {
+    title: "Menu",
+    description: "Menu",
+    keywords:['Menú de carnes',    'Platos de pollo',    'Variedad de pescados',    'Sancocho de Gallina casero',    'Hamburguesas artesanales',]
+}
 
 export default function page() {
     return (
@@ -127,7 +131,7 @@ export default function page() {
                             <th>Nombre</th>
                             <th>Valor</th>
                         </tr>
-                        {item.items.map((item) => (<Cardmenu data={item} />))}</>))}
+                        {item.items.map((item, index) => (<Cardmenu data={item} key={index} />))}</>))}
                 </tbody>
             </table>
         </div>

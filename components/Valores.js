@@ -40,7 +40,7 @@ const Valores = () => {
             <h2 className='text-center font-bold text-3xl '>Nuestros Valores</h2>
             <div className="flex flex-wrap my-12 shadow rounded-xl w-[95%] mx-auto">
                 {valores.map((valor, index) => (
-                    <article class="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3">
+                    <article key={index} class="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3">
                         <div class="flex flex-col gap-4 justify-center items-center mb-6">
                             <FontAwesomeIcon  className="w-6 h-6 text-black text-center" icon={valor.icon} />
                             <div class="ml-4 text-xl font-semibold">

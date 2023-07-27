@@ -2,11 +2,16 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk, faMapLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import fondo from "../../public/fondos/contacto.JPG";
+import fondo from "../../public/fondos/contacto.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 
 const ubicacion = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15902.186630998573!2d-72.8911486!3d4.8476125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad325a9b128cb%3A0xcedbfb5b670d0e67!2sLas%20Heliconias%20Centro%20Agroturistico!5e0!3m2!1ses-419!2sco!4v1689447035116!5m2!1ses-419!2sco"
+
+export const metadata = {
+  title: "Contacto",
+  description: "En esta seccion encontraras los medios de contacto de nuestro hotel",
+};
 
 const contacto = [
   { icon: faWhatsapp, href: 'https://wa.me/+57', text: '+57' },

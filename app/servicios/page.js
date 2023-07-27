@@ -55,10 +55,16 @@ const servicios = [
         descripcion: "Convivir con la naturaleza mientras montas un caballo, una experiencia única con los mejores caballos de la región, disfruta de esta actividad a pocos kilómetros de nuestra ubicación.",
     }
 ]
+
+export const metadata = {
+    title: "Servicios",
+    description: "",
+    keywords: ['Piscina natural','Compromiso medioambiental','Libre de cloro y químicos','Alojamiento rural','Habitaciones cómodas','Tarifas competitivas','Restaurante campestre','Menú delicioso y variado','Wifi gratis','Estacionamiento gratuito','Cancha de tejo','Camping bajo las estrellas','Sendero ecológico','Productos naturales y orgánicos','Eventos especiales','Rutas en bicicleta','Cabalgatas en la naturaleza',]
+}
 export default function page() {
     return (
         <div>
-            <Banner/>
+            <Banner />
             {servicios.map((item, index) => (<CardServicios data={item} key={index} />))}
         </div>
     )

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import defaultImg from '../public/defaultmenu.JPG'
+import defaultImg from '../public/defaultmenu.jpg'
 
 const Cardmenu = ({data}) => {
 const {image, descripcion, precio} = data

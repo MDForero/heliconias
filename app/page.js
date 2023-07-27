@@ -5,6 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Team from '../components/Team'
 
+export const metadata ={
+  title : 'Las Heliconias',
+  description: 'Centro Agroecoturístico Las Heliconias', 
+}
+
 export default function Home() {
   return (
     <div className='flex flex-col  justify-center place-items-center pb-8'>

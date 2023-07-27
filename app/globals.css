@@ -24,7 +24,7 @@ body {
 }
 
 .bg-inicio {
-  background: url("../public/fondos/fondoinicio.JPG") no-repeat;
+  background: url("../public/fondos/fondoinicio.jpg") no-repeat;
   background-size: cover;
 }
 

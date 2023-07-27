@@ -20,20 +20,26 @@ export const metadata = {
 }
 
 const nav1 = [
-  { href: 'habitaciones', label: 'Alojamientos' },
-  { href: 'menu', label: 'Menú' },
-  { href: 'servicios', label: 'Servicios' },
+  { href: '/habitaciones', label: 'Alojamientos' },
+  { href: '/menu', label: 'Menú' },
+  { href: '/servicios', label: 'Servicios' },
 ]
 const nav2 = [
   {
-    href: 'galeria', label: 'Galería'
+    href: '/galeria', label: 'Galería'
   },
   {
-    href: 'nosotros', label: 'Nosotros'
+    href: '/nosotros', label: 'Nosotros'
   },
   {
-    href: 'contacto', label: 'Contacto'
+    href: '/contacto', label: 'Contacto'
   }
+]
+
+const politicas = [
+  { href: 'derechos', label: 'Derechos y deberes' },
+  { href: 'normas', label: 'Normas en la piscina' },
+  { href: 'terminos', label: 'Términos y condiciones'},
 ]
 
 const redes = [
@@ -57,7 +63,7 @@ export default function RootLayout({ children }) {
         <nav className="relative bg-nav text-xl font-normal fixed  z-50 flex flex-wrap items-center justify-between p-4 ">
           <div className="w-auto  md:order-2 md:w-1/5 md:text-center">
             <Link className="text-xl font-semibold  font-heading" href="/">
-              <Image src={logo} alt="logo" className="w-32 md:mx-auto" />
+              <Image src={logo} alt="logo" width={100} className="mx-auto" />
             </Link>
           </div>
           <div className="block md:hidden">
@@ -65,41 +71,27 @@ export default function RootLayout({ children }) {
               {showMenu ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
             </button>
           </div>
-          <div className={"w-full hidden navbar-menu md:order-1 md:block md:w-2/5 md:text-right"}>
+          <div className="w-full hidden navbar-menu md:order-1 md:flex md:flex-row md:gap-8 md:justify-end md:w-2/5 md:text-right">
             {nav1.map((link, index) => {
               const isActive = pathname.slice(1) === link.href
-              return (<Link className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4 mr-10 text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
+              return (<Link key={index} className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4  text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
                 {link.label}
               </Link>)
             })}
           </div>
-          <div className={"w-full hidden navbar-menu md:order-3 md:block md:w-2/5 md:text-left"}>
+          <div className={"w-full hidden navbar-menu md:order-3 md:flex md:flex-row md:gap-8 md:justify-start md:w-2/5 md:text-left"}>
           {nav2.map((link, index) => {
               const isActive = pathname.slice(1) === link.href
-              return (<Link className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4 mr-10 text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
+              return (<Link key={index} className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4  text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
                 {link.label}
               </Link>)
             })}
           </div>
           <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 md:hidden " : "hidden ") + "-z-50 px-4  absolute top-14 right-0 lg:hidden w-full navbar-menu lg:order-1 lg:block lg:w-2/5"}>
-            <Link className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="habitaciones">
-              Alojamientos
-            </Link>
-            <Link className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="menú">
-              Menú
-            </Link>
-            <Link className="block mt-4 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="servicios">
-              Servicios
-            </Link>
-            <Link className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="galeria">
-              Galería
-            </Link>
-            <Link className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="nosotros">
-              Nosotros
-            </Link>
-            <Link className="block mt-4 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href="contacto">
-              Contacto
-            </Link>
+            {nav1.concat(nav2).map((item, index)=>(<Link key={index} className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href={item.href}>
+              {item.label}
+            </Link>))}
+           
           </div>
         </nav>
         <section className="bg-gray-200 text-black overflow-hidden">
@@ -112,58 +104,28 @@ export default function RootLayout({ children }) {
               <li className="w-1/2 md:w-1/3 lg:w-1/3">
                 <div className="text-center">
                   <h2 className="text-gray-500 dark:text-gray-100 text-md uppercase mb-4">
-                    Components
+                    Secciones
                   </h2>
                   <ul>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Elements
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Forms
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Commerces
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Navigation
-                      </a>
-                    </li>
+                    {nav1.concat(nav2).map((link, index)=>(<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
+                      <Link href={link.href}>
+                        {link.label}
+                      </Link>
+                    </li>))}
                   </ul>
                 </div>
               </li>
               <li className="w-1/2 md:w-1/3 lg:w-1/3">
                 <div className="text-center">
                   <h2 className="text-gray-500 dark:text-gray-100 text-md uppercase mb-4">
-                    Customization
+                    Políticas de servicio
                   </h2>
                   <ul>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Settings
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Themes
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        Plugins
-                      </a>
-                    </li>
-                    <li className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
-                      <a href="#">
-                        LinkedIn
-                      </a>
-                    </li>
+                    {politicas.map((item, index)=>(<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
+                      <Link href={`/politicas/${item.href}`}>
+                        {item.label}
+                      </Link>
+                    </li>))}
                   </ul>
                 </div>
               </li>
