@@ -1,3 +1,9 @@
+export const metadata = {
+    title: "Normas en la piscina",
+    description: "Por medio de esta sección describimos las diferentes normas que se deben tener en cuenta al momento de usar la piscina en centro agroeocoturistico las heliconias",
+}
+
+
 export default function page() {
     return <div>
         <h1>Normas en la piscina</h1>

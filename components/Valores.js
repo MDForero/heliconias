@@ -38,9 +38,9 @@ const Valores = () => {
     return (
         <section className='py-8'>
             <h2 className='text-center font-bold text-3xl '>Nuestros Valores</h2>
-            <div className="flex flex-wrap my-12 shadow rounded-xl w-[95%] mx-auto">
+            <div className="flex flex-wrap my-12 gap-6  rounded-xl w-[95%] mx-auto justify-center">
                 {valores.map((valor, index) => (
-                    <article key={index} class="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3">
+                    <article key={index} class="w-full p-8 border-b md:w-1/4 md:border-r shadow-xl ring-1 lg:w-1/4">
                         <div class="flex flex-col gap-4 justify-center items-center mb-6">
                             <FontAwesomeIcon  className="w-6 h-6 text-black text-center" icon={valor.icon} />
                             <div class="ml-4 text-xl font-semibold">

@@ -88,15 +88,15 @@ export default function page() {
             <Banner fondo={fondo} />
             <section className="max-w-screen-xl mx-auto text-lg">
                 <h1 className="text-center py-8 text-3xl text-bold">Habitaciones</h1>
-                <div className="mx-4 rounded-xl w-2/5 float-right overflow-hidden">
+                <div className="mx-4 rounded-xl w-3/5 sm:w-2/5 float-right overflow-hidden">
                     <Image src={heliconia} alt="Heliconia" width={0} height={0} className="object-contain" />
                 </div>
 
-                <p className="w-3/5">¡Bienvenido a un remanso de paz y conexión con la naturaleza en nuestro Centro Agroecoturístico Las Heliconias! Descubre una experiencia inolvidable en nuestra encantadora Habitación Doble, donde la biodiversidad y la sostenibilidad se entrelazan para brindarte momentos mágicos.</p>
+                <p className="">¡Bienvenido a un remanso de paz y conexión con la naturaleza en nuestro Centro Agroecoturístico Las Heliconias! Descubre una experiencia inolvidable en nuestra encantadora Habitación Doble, donde la biodiversidad y la sostenibilidad se entrelazan para brindarte momentos mágicos.</p>
                 <p>Sumérgete en un entorno rodeado de exuberantes heliconias, flores multicolores y el aroma fresco del campo. Nuestra Habitación Doble te brindará la calidez de un hogar y la emoción de una aventura eco-consciente.</p>
                 <p>Despierta cada mañana con el canto melodioso de aves autóctonas y la suave brisa acariciando tu piel. Desde la comodidad de tu habitación, serás testigo de vistas panorámicas que te dejarán sin aliento, mientras te empapas de la tranquilidad y serenidad del paisaje.</p>
                 <p>El Centro Agroecoturístico Las Heliconias te invita a descubrir la magia del campo y a participar en actividades sostenibles que te conectarán con la naturaleza en su forma más pura. Explora nuestros cultivos orgánicos, aprende sobre técnicas de agricultura responsable y degusta delicias frescas de la tierra en nuestros alimentos preparados con amor.</p>
-                <div className="mx-4 rounded-xl w-2/5 float-left overflow-hidden">
+                <div className="mx-4 rounded-xl w-3/5 sm:w-2/5 float-left overflow-hidden block ">
                     <Image src={heliconia} alt="Heliconia" width={0} height={0} className="object-contain" />
                 </div>
                 <p>En nuestra Habitación Doble, sentirás el confort de un espacio diseñado para brindarte el máximo bienestar sin comprometer el respeto por el medio ambiente. Cada detalle ha sido cuidadosamente seleccionado para que te sumerjas en una experiencia agroecoturística auténtica y enriquecedora.</p>

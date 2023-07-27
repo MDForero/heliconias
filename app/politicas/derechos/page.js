@@ -1,3 +1,8 @@
+export const metadata = {
+    title: "Derechos y deberes",
+    description: "Derechos y deberes de los huéspedes",
+}
+
 export default function page() {
     return <div>
         <h1>Derechos y deberes</h1>
