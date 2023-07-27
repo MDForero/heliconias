@@ -12,6 +12,11 @@ import galeria10 from '../public/galeria/galeria10.jpg';
 import galeria11 from '../public/galeria/galeria11.jpg';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
+export const contacto = {
+    telefono: '+573124500289',
+    email: 'atecionalcliente@lasheliconiasmonterey.com',
+}
+
 export const imgs = [
     {
         src: galeria1,
