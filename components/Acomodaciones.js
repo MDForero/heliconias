@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useState } from 'react'
+import ButtonBook from './ButtonBook'
 
 const Acomodaciones = ({ acomodaciones }) => {
     const [img, setImg] = useState(acomodaciones.acomodacion[0])
@@ -18,6 +19,7 @@ const Acomodaciones = ({ acomodaciones }) => {
             <section className='md:w-2/5 w-[95%]  place-self-center'>
                 <h2 className='text-center font-bold text-3xl py-8  '>{acomodaciones.descripcion.title}</h2>
                 <p>{acomodaciones.descripcion.descripcion}</p>
+                <ButtonBook/>
             </section>
         </article>
     )
