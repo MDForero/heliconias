@@ -1,3 +1,9 @@
+export const metadata ={
+    title: "Términos y condiciones",
+    description: "Términos y condiciones del centro agroecoturistico las heliconias",
+    keywords: ['terminos', 'condiciones', 'centro agroecoturístico', 'las heliconias']
+}
+
 export default function page() {
     return <div className="py-6 max-w-screen-lg mx-auto shadow bg-gray-100 px-4  text-justify flex flex-col gap-8" >
         <h1 className="text-center text-3xl font-bold max-w-5xl mx-auto">TÉRMINOS Y CONDICIONES GENERALES CENTRO AGROECOTURISTICO LAS HELICONIAS</h1>

@@ -86,7 +86,7 @@ export default function page() {
     return (
         <div className="bg-white text-black text-justify pb-16">
             <Banner fondo={fondo} />
-            <section className="max-w-screen-xl mx-auto text-lg">
+            <section className="max-w-screen-xl mx-auto md:px-0 px-4 text-lg">
                 <h1 className="text-center py-8 text-3xl text-bold">Habitaciones</h1>
                 <div className="mx-4 rounded-xl w-3/5 sm:w-2/5 float-right overflow-hidden">
                     <Image src={heliconia} alt="Heliconia" width={0} height={0} className="object-contain" />
