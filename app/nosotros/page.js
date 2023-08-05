@@ -21,7 +21,7 @@ export default function page() {
                 <article className="flex flex-wrap  justify-around content-center py-8 gap-4">
                     <div className="md:w-2/5 place-self-center w-4/5">
                         <h2 className="text-center font-semibold text-2xl py-8">Visión</h2>
-                        <p>Consolidándose como una empresa en el sector turismo y una de las mejores de la región, buscando conectar con nuestros visitantes, así mismo generar un servicio con alto estándar de calidad, a gusto del visitante, en un ambiente campestre, natural ecológico y único que logre generar lazos a largo plazo con el cliente. Así mismo aportar al desarrollo de la región y a la activación económica.</p>
+                        <p>Nos consolidaremos como una empresa en el sector turismo y una de las mejores de la región, buscando conectar con nuestros visitantes, así mismo generar un servicio con alto estándar de calidad, a gusto del visitante, en un ambiente campestre, natural ecológico y único que logre generar lazos a largo plazo con el cliente. Así mismo aportar al desarrollo de la región y a la activación económica.</p>
                     </div>
                     <Image src={mision} width={0} height={0} className="md:w-2/5 w-4/5 shadow-xl shadow-amber-800 rounded-2xl" />
                 </article>

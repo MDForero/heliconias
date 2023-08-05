@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={inter.className}>
 
-        <nav className="relative bg-nav text-xl font-normal z-50 flex flex-wrap items-center justify-between p-4 ">
+        <nav className="relative bg-gray-500 text-xl font-normal z-50 flex flex-wrap items-center justify-between p-4 ">
           <div className=" w-auto  md:order-2 md:w-1/5 md:text-center">
             <Link className="text-xl font-semibold  font-heading" href="/">
               <Image src={logo} alt="logo" width={100} className="mx-auto" />
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
               </Link>)
             })}
           </div>
-          <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 md:hidden " : "hidden ") + "-z-50 px-4  absolute top-14 right-0 lg:hidden w-full navbar-menu lg:order-1 lg:block lg:w-2/5"}>
+          <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 md:hidden " : "hidden ") + "px-4  fixed  top-0 flex flex-col justify-center items-center h-screen  right-0 lg:hidden w-full navbar-menu lg:order-1 lg:w-2/5"}>
             {nav1.concat(nav2).map((item, index)=>(<Link key={index} className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href={item.href}>
               {item.label}
             </Link>))}
@@ -98,7 +98,7 @@ export default function RootLayout({ children }) {
           <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
           {children}
         </section>
-        <footer className="bg-nav pt-4 pb-8 xl:pt-8">
+        <footer className="bg-gray-500 pt-4 pb-8 xl:pt-8">
           <div className="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-100">
             <ul className="flex flex-wrap justify-center pb-8 text-lg font-light">
               <li className="w-1/2 md:w-1/3 lg:w-1/3">

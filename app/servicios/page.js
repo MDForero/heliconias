@@ -63,9 +63,9 @@ export const metadata = {
 }
 export default function page() {
     return (
-        <div>
+        <div className="bg-gray-200">
             <Banner />
-            {servicios.map((item, index) => (<CardServicios data={item} key={index} />))}
+            {servicios.map((item, index) => (<CardServicios  data={item} key={index} />))}
         </div>
     )
 }

@@ -15,6 +15,7 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 export const contacto = {
     telefono: '+573124500289',
     email: 'atecionalcliente@lasheliconiasmonterey.com',
+    
 }
 
 export const imgs = [

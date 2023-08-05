@@ -16,11 +16,11 @@ export default function Home() {
 
       <main className=" relative min-h-screen w-full h-[450px] bg-inicio">
         <div className='absolute top-0 right-0 w-full flex flex-col justify-center h-full items-center bg-gray-400/60'>
-          <Image src='/logo.png' width={300} height={300} />
-          <div className='max-w-3xl flex flex-col justify-center items-center text-center gap-2 text-xl'>
+          <Image src='/logo.png' width={300} height={300} className=' ' />
+          <div className='max-w-3xl flex text-white  flex-col justify-center items-center text-center gap-2 text-xl'>
             <p className=' font-bold text-3xl'>¡Descubre el Paraíso Natural en Centro Agroecoturístico Las Heliconias!</p>
-            <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única en Las Heliconias!!</p>
-            <a className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-300 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
+            <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única!!</p>
+            <a className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-800 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
           </div>
         </div>
 
