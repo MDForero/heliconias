@@ -1,16 +1,13 @@
 'use client'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import './globals.css'
 import 'animate.css'
 import { Inter } from 'next/font/google'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTiktok, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import Image from 'next/image'
-import logo from '../public/logo.png'
-
+import CartProvider, { useCart } from '../context/CartContext'
+import Nav from '../components/Nav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -39,7 +36,7 @@ const nav2 = [
 const politicas = [
   { href: 'derechos', label: 'Derechos y deberes' },
   { href: 'normas', label: 'Normas en la piscina' },
-  { href: 'terminos', label: 'Términos y condiciones'},
+  { href: 'terminos', label: 'Términos y condiciones' },
 ]
 
 const redes = [
@@ -54,50 +51,18 @@ const redes = [
 
 export default function RootLayout({ children }) {
   const [showMenu, setShowMenu] = useState(false)
-  const pathname = usePathname()
+  
 
   return (
-    <html lang="en" >
+    <html lang="es" >
       <body className={inter.className}>
-
-        <nav className="relative bg-gray-500 text-xl font-normal z-50 flex flex-wrap items-center justify-between p-4 ">
-          <div className=" w-auto  md:order-2 md:w-1/5 md:text-center">
-            <Link className="text-xl font-semibold  font-heading" href="/">
-              <Image src={logo} alt="logo" width={100} className="mx-auto" />
-            </Link>
-          </div>
-          <div className="block md:hidden">
-            <button className="flex items-center px-3 py-2 text-white border border-gray-500 rounded navbar-burger" onClick={() => setShowMenu(!showMenu)}>
-              {showMenu ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
-            </button>
-          </div>
-          <div className="w-full hidden navbar-menu md:order-1 md:flex md:flex-row md:gap-8 md:justify-end md:w-2/5 md:text-right">
-            {nav1.map((link, index) => {
-              const isActive = pathname.slice(1) === link.href
-              return (<Link key={index} className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4  text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
-                {link.label}
-              </Link>)
-            })}
-          </div>
-          <div className={"w-full hidden navbar-menu md:order-3 md:flex md:flex-row md:gap-8 md:justify-start md:w-2/5 md:text-left"}>
-          {nav2.map((link, index) => {
-              const isActive = pathname.slice(1) === link.href
-              return (<Link key={index} className={(isActive ? "font-bold border-b-4 px-2 border-gray-700 " : "") + "block mt-4  text-gray-100 md:inline-block md:mt-0 hover:text-gray-600"} href={link.href}>
-                {link.label}
-              </Link>)
-            })}
-          </div>
-          <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 md:hidden " : "hidden ") + "px-4  fixed  top-0 flex flex-col justify-center items-center h-screen  right-0 lg:hidden w-full navbar-menu lg:order-1 lg:w-2/5"}>
-            {nav1.concat(nav2).map((item, index)=>(<Link key={index} className="block mt-4 mr-10 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href={item.href}>
-              {item.label}
-            </Link>))}
-           
-          </div>
-        </nav>
-        <section className="bg-gray-50 text-black overflow-hidden">
-          <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
-          {children}
-        </section>
+        <CartProvider>
+          <Nav nav1={nav1} nav2={nav2}/>
+          <section className="bg-gray-50 text-black overflow-hidden">
+            <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
+            {children}
+          </section>
+        </CartProvider>
         <footer className="bg-gray-500 pt-4 pb-8 xl:pt-8">
           <div className="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-100">
             <ul className="flex flex-wrap justify-center pb-8 text-lg font-light">
@@ -107,7 +72,7 @@ export default function RootLayout({ children }) {
                     Secciones
                   </h2>
                   <ul>
-                    {nav1.concat(nav2).map((link, index)=>(<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
+                    {nav1.concat(nav2).map((link, index) => (<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
                       <Link href={link.href}>
                         {link.label}
                       </Link>
@@ -121,7 +86,7 @@ export default function RootLayout({ children }) {
                     Políticas de servicio
                   </h2>
                   <ul>
-                    {politicas.map((item, index)=>(<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
+                    {politicas.map((item, index) => (<li key={index} className="mb-4 transition-colors duration-200 hover:text-gray-100 dark:hover:text-white">
                       <Link href={`/politicas/${item.href}`}>
                         {item.label}
                       </Link>
