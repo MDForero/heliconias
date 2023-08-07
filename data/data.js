@@ -13,7 +13,7 @@ import galeria11 from '../public/galeria/galeria11.jpg';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export const contacto = {
-    telefono: '+573124500289',
+    telefono: '+57312',
     email: 'atecionalcliente@lasheliconiasmonterey.com',
     
 }
@@ -166,9 +166,10 @@ export const menu = [
 
     {
         category: "Carnes",
+        img:'/defaultmenu.JPG',
         items: [
             {
-                descripcion: "Churrasco argentino (400g): corte mariposa, acompañado de papita a la francesa, ensalada de aguacate y chimichurri de la casa.",
+                descripcion: "Churrasco argentino (400g): corte mariposa, acompañado de papa a la francesa, ensalada de aguacate y chimichurri de la casa.",
                 precio: 35000
             },
             {
@@ -176,34 +177,36 @@ export const menu = [
                 precio: 26000
             },
             {
-                descripcion: "Costillas de cerdo BBQ (400g): bañados en salsa BBQ, acompañado de papitas criollas, plátano maduro y ensalada.",
+                descripcion: "Costillas de cerdo BBQ (400g): bañados en salsa BBQ, acompañado de papa criollas, plátano maduro y ensalada.",
                 precio: 28000
             }]
     },
 
     {
         category: "Pollo",
+        img:'/defaultmenu.JPG',
         items: [
             {
-                descripcion: "Pechuga a la plancha (400g): acompañada de papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Pechuga a la plancha (400g): acompañada de papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 25000
             },
             {
-                descripcion: "Pechuga gratinada (400g): acompañada con queso gratinado, papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Pechuga gratinada (400g): acompañada con queso gratinado, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 28000
             },
             {
-                descripcion: "Pechuga salsa champiñones (400g): acompañada con champiñones, papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Pechuga salsa champiñones (400g): acompañada con champiñones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 28000
             },
             {
-                descripcion: "Pechuga salsa camarones (400g): acompañada con camarones, papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Pechuga salsa camarones (400g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000
             },
         ]
     },
     {
         category: "Pescados",
+        img:'/defaultmenu.JPG',
         items: [
             {
                 descripcion: "Cazuela de mariscos: acompañada de patacón, arroz blanco, aguacate y limón              ",
@@ -214,7 +217,7 @@ export const menu = [
                 precio: 35000
             },
             {
-                descripcion: "Bagre frito (400g): acompañados con papita a la francesa, arroz blanco, patacón y ensalada.",
+                descripcion: "Bagre frito (400g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 33000
             },
             {
@@ -222,7 +225,7 @@ export const menu = [
                 precio: 30000
             },
             {
-                descripcion: "Mojarra frita (600g): acompañados con papita a la francesa, arroz blanco, patacón y ensalada.",
+                descripcion: "Mojarra frita (600g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 27000
             },
             {
@@ -230,20 +233,21 @@ export const menu = [
                 precio: 30000
             },
             {
-                descripcion: "Trucha a la plancha (500g): acompañados con papita a la francesa, arroz blanco, patacón y ensalada.",
+                descripcion: "Trucha a la plancha (500g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 30000
             },
             {
-                descripcion: "Trucha en salsa de champiñones (500g): acompañada con champiñones, papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Trucha en salsa de champiñones (500g): acompañada con champiñones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 33000
             },
             {
-                descripcion: "Trucha en salsa de camarones (500g): acompañada con camarones, papita a la francesa, patacón, arroz blanco y ensalada.",
+                descripcion: "Trucha en salsa de camarones (500g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000
             }]
     },
     {
         category: "Sancocho de Gallina ",
+        img:'/defaultmenu.JPG',
         items: [
             {
                 descripcion: "Sancocho de Gallina campesina para 6 personas: 6 platos de sancocho, acompañados con una gallina campesina, arroz con menudencias, arepas boyacenses, aguacate, una jarra de limonada. (reservar un día antes).",
@@ -256,18 +260,20 @@ export const menu = [
     },
     {
         category: "hamburguesas ",
+        img:'/defaultmenu.JPG',
         items: [
             {
                 descripcion: "hamburguesa sencilla (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado y queso.",
                 precio: 14000
             },
             {
-                descripcion: "hamburguesa en combo (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado, queso, papita a la francesa gaseosa 350 ml",
+                descripcion: "hamburguesa en combo (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado, queso, papa a la francesa gaseosa 350 ml",
                 precio: 20000
             }]
     },
     {
         category: 'bebidas',
+        img:'/defaultmenu.JPG',
         items: [
             {
                 descripcion: 'gaseosa 350 ml',
@@ -341,6 +347,7 @@ export const menu = [
     }, 
     {
         category: 'adicionales',
+        img:'/defaultmenu.JPG',
         items: [
             {
                 descripcion: 'Porción de arroz:',
