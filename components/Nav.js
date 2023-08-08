@@ -24,7 +24,7 @@ const Nav = ({ nav1, nav2 }) => {
     return (
         <div className=' bg-gray-500 '>
 
-            <nav className="sticky bg-gray-500 z-50text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
+            <nav className="fixed z-50 bg-gray-500 z-50text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
 
                 <div className=" w-auto  md:order-2 md:w-1/5 md:text-center">
                     <Link className="text-xl font-semibold  font-heading" href="/">

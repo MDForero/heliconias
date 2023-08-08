@@ -31,53 +31,63 @@ export default function TableCheckOut() {
     }, [cart.cart])
 
     return (
-        <div className="flex flex-wrap max-w-screen-2xl w-full place-contentz-center">
-            <table className="border-separate w-5/6">
-                <thead>
-                    <tr>
-                        <th className="p-3 text-left">Producto</th>
-                        <th className="p-3 text-left">Precio</th>
-                        <th className="p-3 text-left">Cantidad</th>
-                        <th className="p-3 text-left">Subtotal</th>
-                        <th className="p-3 text-left">Eliminar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {cart.cart.map((item, index) => {
-                        return (<tr key={index}>
-                            <td className="p-3">{item.nombre}</td>
-                            <td className="p-3">{item.precio}</td>
-                            <td className="p-3">{item.cantidad}</td>
-                            <td className="p-3">{item.precio * item.cantidad}</td>
-                            <td className="p-3"><button onClick={() => dispatch({ type: "REMOVE_ONE", payload: item })}><FontAwesomeIcon icon={faTrash} /></button></td>
-                        </tr>)
-                    })}
-                </tbody>
-            </table>
-            <div className="">
-                <table className="border-separate w-full">
-                    <thead>
-                        <tr>
-                            <th className="p-3 text-left">Subtotal</th>
-                            <th className="p-3 text-left">IVA</th>
-                            <th className="p-3 text-left">Envio</th>
-                            <th className="p-3 text-left">Descuento</th>
-                            <th className="p-3 text-left">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className="p-3">{subtotal}</td>
-                            <td className="p-3">{iva}</td>
-                            <td className="p-3">{envio}</td>
-                            <td className="p-3">{descuento}</td>
-                            <td className="p-3">{total}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <div className="container max-w-4xl px-4 mx-auto sm:px-8">
+            <div className="py-8">
+                <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">
+                    <div className="inline-block max-w-full w-full h-96 overflow-hidden overflow-y-auto rounded-lg shadow m-0 ">
+                        <table className="max-w-full w-full  leading-normal">
+                            <thead className='sticky top-0'>
+                                <tr>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                                        Precios
+                                    </th>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Precio</th>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Cantidad</th>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Subtotal</th>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                {cart.cart.map((item, index) => {
+                                    return (<tr key={index}>
+                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                            <p className="text-gray-900 whitespace-no-wrap">
+                                                {item.nombre}
+                                            </p>
+                                        </td>
+                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><p className="text-gray-900 whitespace-no-wrap">{item.precio}</p></td>
+                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><p className="text-gray-900 whitespace-no-wrap">{item.cantidad}</p></td>
+                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><p className="text-gray-900 whitespace-no-wrap">{item.precio * item.cantidad}</p></td>
+                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><button onClick={() => dispatch({ type: "REMOVE_ONE", payload: item })}><FontAwesomeIcon icon={faTrash} /></button></td>
+                                    </tr>)
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="m-0 ">
+                        <table className=" w-full m-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Subtotal</th>
+
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><p className="text-gray-900 whitespace-no-wrap">{subtotal}</p></td>
+
+                                    <td className="px-5 py-5 text-sm bg-white border-b border-gray-200"><p className="text-gray-900 whitespace-no-wrap">{total}</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div >
+        </div >
+
     )
 }
 
-    
+
+

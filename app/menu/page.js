@@ -28,7 +28,7 @@ export default function page() {
                     }
                     return item.category != 'bebidas' && item.category != 'adicionales' ?
 
-                        <section key={index} className="border-separate z-50 relative flex md:flex-row  text-gray-100 md:flex-nowrap flex-wrap   justify-center items-center  gap-3 even:flex-row-reverse border-spacing-6  max-w-screen-2xl xl:px-24 min-h-screen mx-auto ">
+                        <section key={index} className="border-separate z-0 relative flex md:flex-row  text-gray-100 md:flex-nowrap flex-wrap   justify-center items-center  gap-3 even:flex-row-reverse border-spacing-6  max-w-screen-2xl xl:px-24 min-h-screen mx-auto ">
                             <Image src={item.img} alt={'imagen de la categoria' + item.category} width={0} height={0} className="lg:w-[500px] lg:h-[500px] lg:block hidden rounded-full" />
                             <div className="lg:w-3/5">
                                 <h1 className="text-3xl text-center pt-4 mb-4  first-letter:capitalize">{item.category}</h1>
@@ -37,12 +37,12 @@ export default function page() {
                                 </div>
                             </div>
                             <div style={style} className="w-full h-full -z-10 m-0 absolute top-0 right-0">
-                                <div className="w-full bg-gray-950/80 h-full">
+                                <div className="w-full bg-gray-950/90 h-full">
                                 </div>
                             </div>
                         </section>
                         : <div style={style} className="w-full">
-                            <div className="w-full bg-gray-950/80 text-gray-100">
+                            <div className="w-full bg-gray-950/90 text-gray-100">
                                 <section key={index} className=" border-separate border-spacing-6  h-fit max-w-6xl mx-auto  ">
                                     <h1 className="text-3xl text-center pt-4 mb-4 border-t-4 border-black first-letter:capitalize">{item.category}</h1>
                                     <div className="flex flex-row flex-wrap justify-center gap-3">
