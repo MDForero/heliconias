@@ -22,9 +22,9 @@ const Nav = ({ nav1, nav2 }) => {
     }
 
     return (
-        <div className=' bg-gray-500 '>
+        <div className=' bg-gray-500 w-full z-50 fixed '>
 
-            <nav className="fixed z-50 bg-gray-500 z-50text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
+            <nav className=" bg-gray-500 text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
 
                 <div className=" w-auto  md:order-2 md:w-1/5 md:text-center">
                     <Link className="text-xl font-semibold  font-heading" href="/">
@@ -59,11 +59,10 @@ const Nav = ({ nav1, nav2 }) => {
                 </div>
                 <div className=' lg:top-6 lg:right-12 mx-auto lg:absolute '>
                     <div className=''>
-                        <button className='relative bg-orange-500  text-white rounded-lg px-2 py-1' onClick={handleShow }>
+                        { cart.cantidad ? <button className='relative bg-orange-500  text-white rounded-lg px-2 py-1' onClick={handleShow }>
                             <FontAwesomeIcon icon={faCartShopping} className="text-2xl text-gray-100" />
-                            {cart.cantidad ? <div className='rounded-full bg-red-600 absolute -top-3 -left-2 w-7 h-7'>{cart.cantidad}</div> : null}
-                        </button>
-
+                            <div className='rounded-full bg-red-600 absolute -top-3 -left-2 w-7 h-7'>{cart.cantidad}</div>
+                        </button>:null }
                     </div>
                 </div>
             </nav>

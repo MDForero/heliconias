@@ -1,80 +1,11 @@
 import Acomodaciones from "@/components/Acomodaciones";
-import vista1 from "../../public/habitaciones/IMG_1157.jpg";
-import vista2 from "../../public/habitaciones/IMG_1158.jpg";
-import vista3 from "../../public/habitaciones/IMG_1161.jpg";
-import vista4 from "../../public/habitaciones/IMG_1170.jpg";
-import vista5 from "../../public/habitaciones/IMG_1172.jpg";
+
 import heliconia from "../../public/mision.jpg"
 import Image from "next/image";
 import fondo from "../../public/fondos/alojamiento.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
-
-
-const acomodaciones = [
-    {
-        descripcion: {
-            title: "Habitación doble",
-            descripcion: "Habitación con cama doble, baño privado, televisión, ventilador, closet, mesa de noche, mesa de trabajo, silla, wifi, vista al jardín."
-        },
-        acomodacion: [{
-            img: vista1,
-            alt: "vista1",
-            title: "Vista 1"
-        },
-        {
-            img: vista2,
-            alt: "vista2",
-            title: "Vista 2"
-        },
-        {
-            img: vista3,
-            alt: "vista3",
-            title: "Vista 3"
-        },
-        {
-            img: vista4,
-            alt: "vista4",
-            title: "Vista 4"
-        },
-        {
-            img: vista5,
-            alt: "vista5",
-            title: "Vista 5"
-        }]
-    },
-    {
-        descripcion: {
-            title: "Habitación triple",
-            descripcion: "Habitación con cama doble, cama sencilla, baño privado, televisión, ventilador, closet, mesa de noche, mesa de trabajo, silla, wifi, vista al jardín."
-        },
-        acomodacion: [{
-            img: vista1,
-            alt: "vista1",
-            title: "Vista 1"
-        },
-        {
-            img: vista2,
-            alt: "vista2",
-            title: "Vista 2"
-        },
-        {
-            img: vista3,
-            alt: "vista3",
-            title: "Vista 3"
-        },
-        {
-            img: vista4,
-            alt: "vista4",
-            title: "Vista 4"
-        },
-        {
-            img: vista5,
-            alt: "vista5",
-            title: "Vista 5"
-        }]
-    },
-]
+import {acomodaciones} from "@/data/data"
 
 export const metadata = {
     title: "alojamientos",
@@ -84,7 +15,7 @@ export const metadata = {
 
 export default function page() {
     return (
-        <div className="bg-white text-black text-justify pb-16">
+        <div className=" text-gray-200 text-justify pb-16">
             <Banner fondo={fondo} />
             <section className="max-w-screen-xl mx-auto md:px-0 px-4 text-lg">
                 <h1 className="text-center py-8 text-3xl text-bold">Habitaciones</h1>

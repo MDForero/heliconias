@@ -39,17 +39,17 @@ const valores = [
 const Valores = () => {
     return (
         <section className='py-2 text-justify'>
-            <h2 className='text-center font-bold text-3xl '>Nuestros Valores</h2>
+            <h2 className='text-center font-bold text-gray-400 text-3xl '>Nuestros Valores</h2>
             <div className="flex flex-wrap my-12 gap-6  rounded-xl w-[95%] mx-auto justify-center">
                 {valores.map((valor, index) => (
-                    <article key={index} class="w-full p-8 border-b md:w-1/4 md:border-r shadow-xl ring-1 lg:w-1/4">
-                        <div class="flex flex-col gap-4 justify-center items-center mb-6">
-                            <FontAwesomeIcon  className="w-14 h-14 text-black text-center" icon={valor.icon} />
-                            <div class="ml-4 text-xl font-semibold text-gray-800">
+                    <article key={index} className="w-full p-8 border-b md:w-1/4 md:border-r shadow-xl ring-1 lg:w-1/4">
+                        <div className="flex flex-col gap-4 justify-center items-center mb-6">
+                            <FontAwesomeIcon  className="w-14 h-14 text-gray-300 text-center" icon={valor.icon} />
+                            <div className="ml-4 text-xl font-semibold text-gray-300">
                                 {valor.title}
                             </div>
                         </div>
-                        <p class="leading-loose text-gray-600 ">
+                        <p className="leading-loose text-gray-300 ">
                             {valor.descripcion}
                         </p>
                     </article>

@@ -15,10 +15,10 @@ export const metadata = {
 export default function page() {
     return (
         <div>
-            <Banner />
+            <Banner fondo={'/fondos/menu.JPG'}/>
             <h1 className="text-4xl font-bold text-center pt-8 bg-gray-950/80 text-gray-100">Menú</h1>
             <section className="flex flex-row flex-wrap justify-evenly max-w-screen-2xl mx-auto">
-                {menu.map((item, index) => {
+                {menu.map((item,index) => {
                     const style = {
                         backgroundImage: `url(${item.img})`,
                         backgroundRepeat: 'no-repeat',
@@ -48,7 +48,7 @@ export default function page() {
                                     <div className="flex flex-row flex-wrap justify-center gap-3">
 
 
-                                        {item.items.map((item, index) => (<div className="w-2/5 h-full "><Cardmenu data={item} key={index} center /></div>))}
+                                        {item.items.map((item, index) => (<div key={index} className="md:w-2/5 h-full "><Cardmenu data={item}  center /></div>))}
 
                                     </div>
                                 </section>

@@ -46,15 +46,15 @@ const Galeria = () => {
           </div>
         </section>}
       <div>
-        <ImageList variant="masonry" cols={6} gap={9}>
+        <section className='grid md:grid-cols-4 sm:grid-cols-2 xl:grid-cols-6 grid-flow-dense gap-2'>
           {imgs.map((item, index) => (
             <button onClick={() => setImg(item)} key={index}>
-              <ImageListItem >
+              
                 <Image src={item.src} width={0} height={0} alt={item.alt} className='rounded-xl object-cover'/>
-              </ImageListItem>
+              
             </button>
           ))}
-        </ImageList>
+        </section>
       </div>
     </div>
   )

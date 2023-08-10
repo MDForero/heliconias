@@ -13,21 +13,18 @@ import { useEffect, useState } from 'react'
 export default function TableCheckOut() {
 
     const cart = useCart()
-    console.log(cart)
+    
     const [total, setTotal] = useState(0)
     const [subtotal, setSubtotal] = useState(0)
     const [iva, setIva] = useState(0)
     const [envio, setEnvio] = useState(0)
     const [descuento, setDescuento] = useState(0)
-    const [totalFinal, setTotalFinal] = useState(0)
-
     useEffect(() => {
         setSubtotal(cart.cart.reduce((sum, { precio, cantidad }) => sum + precio * cantidad, 0))
         setIva(subtotal * 0.16)
         setEnvio(subtotal * 0.05)
         setDescuento(subtotal * 0.1)
         setTotal(subtotal + iva + envio - descuento)
-        setTotalFinal(total)
     }, [cart.cart])
 
     return (

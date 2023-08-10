@@ -33,35 +33,35 @@ const ModalCart = ({ show, onHide }) => {
           <button onClick={onHide} className="w-12 h-12 text-xl justify-self-end font-extrabold bg-red-600 rounded-full">X</button>
         </header>
         <section className="flex w-full place-content-center h-[80vh] overflow-hidden overflow-y-auto px-4 ">
-                  <table class="min-w-full leading-normal border-separate border-spacing-1">
+                  <table className="min-w-full leading-normal h-fit border-separate border-spacing-1">
                     <thead className="sticky top-0 bg-gray-100">
                       <tr className="bg-gray-100">
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">id</th>
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Producto</th>
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Cantidad</th>
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Precio</th>
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Subtotal</th>
-                        <th scope="col" class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">eliminar</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">id</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Producto</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Cantidad</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Precio</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">Subtotal</th>
+                        <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">eliminar</th>
                       </tr>
                     </thead>
                     <tbody>
                       {cart.cart.map((item, index) => {
                         console.log(item.id)
                         return (<tr key={index}>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap">{item.id}</p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap">{item.nombre}</p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap">{item.cantidad}</p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap">{item.precio}</p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap">{item.precio * item.cantidad}</p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE_ONE", payload: item })}><FontAwesomeIcon icon={faTrash} /></button></p></td>
-                          <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                                <p class="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE", payload: item })}>Eliminar</button></p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap">{item.id}</p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap">{item.nombre}</p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap">{item.cantidad}</p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap">{item.precio}</p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap">{item.precio * item.cantidad}</p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE_ONE", payload: item })}><FontAwesomeIcon icon={faTrash} /></button></p></td>
+                          <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                <p className="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE", payload: item })}>Eliminar</button></p></td>
                         </tr>)
                       })}
                     </tbody>

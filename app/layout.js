@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTiktok, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import CartProvider, { useCart } from '../context/CartContext'
 import Nav from '../components/Nav'
+import { contacto } from '@/data/data'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -58,8 +59,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <CartProvider>
           <Nav nav1={nav1} nav2={nav2}/>
-          <section className="bg-gray-50 text-black overflow-hidden">
-            <a href='#' className='fixed  bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
+          <section className="bg-gray-900 text-black overflow-hidden">
+            <a href={`https://api.whatsapp.com/send?phone=${contacto.telefono}&text=Hola vengo de tu pagina web+`} target='_blank' className='fixed text-white bg-green-600 rounded-full px-1 bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
             {children}
           </section>
         </CartProvider>
