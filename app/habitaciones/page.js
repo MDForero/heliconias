@@ -6,6 +6,7 @@ import fondo from "../../public/fondos/alojamiento.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 import {acomodaciones} from "@/data/data"
+import WhyUs from "@/components/WhyUs";
 
 export const metadata = {
     title: "alojamientos",
@@ -13,27 +14,32 @@ export const metadata = {
     keywords: ['habitaciones', 'alojamiento', 'hotel', 'centro agroecoturístico', 'las heliconias']
 }
 
+const text = {
+    title: 'Las Heliconias tu hogar  en el campo',
+    data: [
+      {
+        title: 'Las Heliconias',
+        subtitle: '¡Descubre el Paraíso Natural!',
+        text: 'A tan solo 5 km de Monterrey, Casanare, siguiendo la carretera que te lleva a Yopal, te espera un lugar encantador rodeado de naturaleza, un ambiente realmente magnífico y perfecto para toda la familia. En este rincón especial, te brindamos servicios de alojamiento rural que incluyen habitaciones amplias y muy cómodas. Además, podrás disfrutar de una piscina natural para darte un chapuzón en esos soleados días, y contamos con un restaurante campestre que ofrece un menú gourmet exquisito, pensado para satisfacer todos tus gustos culinarios. ¡Estamos ansiosos por recibirte y hacer que tu estadía sea inolvidable!',
+      },
+      {
+        title: 'Misión',
+        subtitle: 'Dejanos ser tu mejor experiencia',
+        text: 'Garantizar un servicio de alto estándar de calidad y confort, descanso y delite gastronómico enfocados en la satisfacción total de todos nuestros visitantes, creando una experiencia inolvidable mientras disfrutas de nuestro ambiente natural y ecológico de nuestras instalaciones.',
+      },
+      {
+        title: 'Porque elegirnos?',
+        subtitle: 'Una experiencia llanera',
+        text: 'Descubre el auténtica llano en las Heliconias. Naturaleza que inspira libertad, jardines multicolores que bailan con el viento, aves que pintan el cielo, y senderos que despiertan tu espíritu aventurero. Sumérgete en la cultura, sabores y tradiciones. Siente la calidez de los habitantes, conoce la vida en los llanos y déjate llevar por la magia de lo llanero.',
+      },
+    ]
+  }
+
 export default function page() {
     return (
         <div className=" text-gray-200 text-justify pb-16">
-            <Banner fondo={fondo} />
-            <section className="max-w-screen-xl mx-auto md:px-0 px-4 text-lg">
-                <h1 className="text-center py-8 text-3xl text-bold">Habitaciones</h1>
-                <div className="mx-4 rounded-xl w-3/5 sm:w-2/5 float-right overflow-hidden">
-                    <Image src={heliconia} alt="Heliconia" width={0} height={0} className="object-contain" />
-                </div>
-
-                <p className="">¡Bienvenido a un remanso de paz y conexión con la naturaleza en nuestro Centro Agroecoturístico Las Heliconias! Descubre una experiencia inolvidable en nuestra encantadora Habitación Doble, donde la biodiversidad y la sostenibilidad se entrelazan para brindarte momentos mágicos.</p>
-                <p>Sumérgete en un entorno rodeado de exuberantes heliconias, flores multicolores y el aroma fresco del campo. Nuestra Habitación Doble te brindará la calidez de un hogar y la emoción de una aventura eco-consciente.</p>
-                <p>Despierta cada mañana con el canto melodioso de aves autóctonas y la suave brisa acariciando tu piel. Desde la comodidad de tu habitación, serás testigo de vistas panorámicas que te dejarán sin aliento, mientras te empapas de la tranquilidad y serenidad del paisaje.</p>
-                <p>El Centro Agroecoturístico Las Heliconias te invita a descubrir la magia del campo y a participar en actividades sostenibles que te conectarán con la naturaleza en su forma más pura. Explora nuestros cultivos orgánicos, aprende sobre técnicas de agricultura responsable y degusta delicias frescas de la tierra en nuestros alimentos preparados con amor.</p>
-                <div className="mx-4 rounded-xl w-3/5 sm:w-2/5 float-left overflow-hidden block ">
-                    <Image src={heliconia} alt="Heliconia" width={0} height={0} className="object-contain" />
-                </div>
-                <p>En nuestra Habitación Doble, sentirás el confort de un espacio diseñado para brindarte el máximo bienestar sin comprometer el respeto por el medio ambiente. Cada detalle ha sido cuidadosamente seleccionado para que te sumerjas en una experiencia agroecoturística auténtica y enriquecedora.</p>
-                <p>Déjate cautivar por el encanto y la hospitalidad de nuestro personal, quienes te acompañarán en esta travesía inolvidable y te brindarán una experiencia llena de aprendizaje y conexión con la tierra.</p>
-                <p>¡Reserva ahora y vive una experiencia única en nuestra Habitación Doble en Centro Agroecoturístico Las Heliconias! Un lugar donde la naturaleza y la sostenibilidad te esperan con los brazos abiertos para brindarte momentos de magia y conexión con la esencia de la vida. ¡Te esperamos con ilusión y entusiasmo para compartir esta experiencia contigo!</p>
-            </section>
+            <Banner fondo={fondo} imgPosition={'bottom'} />
+            <WhyUs/>
             <section className="max-w-screen-xl mx-auto my-14 text-lg">
                 {acomodaciones.map((item, index) => (<Acomodaciones acomodaciones={item} key={index} />))}
             </section>

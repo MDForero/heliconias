@@ -12,7 +12,7 @@ export const metadata = {
 export default function page() {
     return (
         <div>
-            <Banner />
+            <Banner fondo={'/galeria/galeria9.JPG'} />
             <div className="py-8">
                 <Galeria />
             </div>

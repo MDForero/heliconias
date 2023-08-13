@@ -169,7 +169,7 @@ export const menu = [
 
     {
         category: "Carnes",
-        img: '/menu/Carne.jpg',
+        img: '/menu/carneoreada.png',
         items: [
             {
                 descripcion: "Churrasco argentino (400g): corte mariposa, acompañado de papa a la francesa, ensalada de aguacate y chimichurri de la casa.",
@@ -191,7 +191,7 @@ export const menu = [
 
     {
         category: "Pollo",
-        img: '/menu/pechuga-en-salsa-champiñones.png',
+        img: '/menu/pechuga-en-salsa-champinones.png',
         items: [
             {
                 descripcion: "Pechuga a la plancha (400g): acompañada de papa a la francesa, patacón, arroz blanco y ensalada.",
@@ -206,7 +206,7 @@ export const menu = [
             {
                 descripcion: "Pechuga salsa champiñones (400g): acompañada con champiñones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 28000,
-                img:'/menu/pechuga-en-salsa-champiñones.png'
+                img:'/menu/pechuga-en-salsa-champinones.png'
             },
             {
                 descripcion: "Pechuga salsa camarones (400g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
@@ -217,7 +217,7 @@ export const menu = [
     },
     {
         category: "Pescados",
-        img: '/menu/trucha-saludable.png',
+        img: '/menu/bagre-frito.png',
         items: [
             {
                 descripcion: "Cazuela de mariscos: acompañada de patacón, arroz blanco, aguacate y limón              ",
@@ -283,17 +283,17 @@ export const menu = [
     },
     {
         category: "hamburguesas ",
-        img: '/menu/hamburguesa.png',
+        img: '/menu/Hamburguesa.png',
         items: [
             {
                 descripcion: "hamburguesa sencilla (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado y queso.",
                 precio: 14000,
-                img:'/menu/hamburguesa.png'
+                img:'/menu/Hamburguesa.png'
             },
             {
                 descripcion: "hamburguesa en combo (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado, queso, papa a la francesa gaseosa 350 ml",
                 precio: 20000,
-                img:'/menu/hamburguesa.png'
+                img:'/menu/Hamburguesa.png'
             }]
     },
     {
@@ -303,87 +303,87 @@ export const menu = [
             {
                 descripcion: 'gaseosa 350 ml',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'gaseosa litro ¼',
                 precio: 7000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'gaseosa 3 litros',
                 precio: 9000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'jugo hit 600 ml',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'agua en botella con o sin gas 600ml',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'vive 100',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'soda bretaña',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'jugo natural agua',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: ' jugo natural leche',
                 precio: 6000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Jarra limonada:',
                 precio: 6000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Jarra naranjada o Mandarinada:',
                 precio: 10000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Águila original, costeña bacana',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'águila ligth',
                 precio: 3500,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Club Colombia',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Coronita',
                 precio: 5000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Cerveza en lata águila original – costeña bacana',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Aguardiente antioqueño ½',
                 precio: 45000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
         ]
     },
@@ -394,37 +394,37 @@ export const menu = [
             {
                 descripcion: 'Porción de arroz:',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Porción patacón:',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Porción papa francesa:',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Porción papa criolla: ',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Porción plátano:',
                 precio: 4000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Arepas arriera: ',
                 precio: 3000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
             {
                 descripcion: 'Porción aguacate: ',
                 precio: 5000,
-                img:'/defaultmenu.JPG'
+                img:""
             },
         ]
     }
@@ -496,50 +496,57 @@ export const acomodaciones = [
 export const servicios = [
     {
         title: "Piscina natural:",
-        descripcion: "Comprometidos con el medio ambiente te ofrecemos un espacio libre de cloro y químico para disfrutar de un chapuzón y un día soleado(9 am a 8 pm",
+        descripcion: "comprometidos con el medio ambiente te ofrecemos un espacio libre de cloro y químico para disfrutar de un chapuzón y un día soleado (9 am a 8 pm ( miércoles y jueves no contamos con servicio de piscina )",
+        img:'/servicios/piscina.jpg',
     },
     {
         title: "Alojamiento rural:",
         descripcion: " contamos con amplias y cómodas habitaciones estándar doble, triple, tenemos las mejores tarifas el mercado.",
+        img:'/servicios/alojamiento.jpg',
     },
     {
         title: "Restaurante campestre:",
         descripcion: "Nuestro restaurante campestre está rodeado con un hermoso y tranquilo paisaje al aire libre, donde encontrarás un delicioso y variado menú para que disfrutes de un momento agradable junto a tu familia o amigos.Desayuno(7am a 10 am) almuerzo(12 am a 3pm) cena(6 pm a 8pm)",
-    },
-    {
-        title: "Wifi gratis:",
-        descripcion: "Contamos con wifi para que siempre estés conectado mientras disfrutas de grandes momentos junto a tu familia o amigos.",
+        img:'/servicios/restaurante.jpg',
     },
     {
         title: "Estacionamiento gratis:",
         descripcion: "Contamos con estacionamiento privado y gratuito ",
+        img:'/servicios/parking.jpg',
     },
     {
         title: "Cancha de tejo:",
         descripcion: "Contamos con cancha de Mini Tejo y poli tejo, para empresas grupo de amigos y familia. (10 am a 6pm)",
+        img:'/servicios/tejo.jpg',
     },
     {
         title: "Camping:",
         descripcion: "¡Acampa en familia bajo la luz de las estrellas, acompañados de una fogata!  Llegada 3pm salida 12 am",
+        img:'/servicios/piscina.JPG',
     },
     {
         title: "Sendero ecológico:",
         descripcion: "Caminar en medio de la naturaleza, disponemos de un sendero interpretativo, que te invita a disfrutar de todas las bondades de la naturaleza y la vegetación en un ambiente de tranquilidad al aire puro. ",
+        img:'/servicios/piscina.JPG',
     },
     {
         title: "Tienda campesina:",
         descripcion: "Productos Naturales, Orgánicos y Artesanales cultivados en nuestro campo ",
+        img:'/servicios/piscina.JPG',
     },
     {
         title: "Eventos:",
         descripcion: "Cumpleaños, bautismos, fiestas de quince, cenas navideñas, matrimonios, celebra con nosotros tus fechas especiales.",
+        img:'/servicios/piscina.JPG',
     },
     {
         title: "Ruta recreativa y alta montaña en bici:",
         descripcion: "Contamos con dos rutas marcadas en la aplicación strava, ruta recreativa que cuenta con 18 km con terrenos llanos y repechos donde disfrutaras de hermosos paisajes y fuentes hídricas.Ruta de alta montaña 64 km donde disfrutaras de 10 km de alta montaña donde veras paisajes y miradores exóticos de la región.",
+        img:'/servicios/piscina.JPG',
     },
     {
         title: "Cabalgatas:",
-        descripcion: "Convivir con la naturaleza mientras montas un caballo, una experiencia única con los mejores caballos de la región, disfruta de esta actividad a pocos kilómetros de nuestra ubicación.",
+        descripcion: "convivir con la naturaleza mientras montas un caballo, una experiencia única con los mejores caballos de la región, disfruta de esta actividad a pocos kilómetros de nuestra ubicación en rancho equino el morichal.",
+        img:'/servicios/piscina.JPG',
     }
 ]

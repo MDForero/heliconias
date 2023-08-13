@@ -4,27 +4,59 @@ import logo from '../public/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Team from '../components/Team'
+import Script from 'next/script'
+import WhyUs from '@/components/WhyUs'
 
 export const metadata = {
   title: 'Las Heliconias',
   description: 'Centro Agroecoturístico Las Heliconias',
 }
 
+const text = {
+  title: 'Las Heliconias tu hogar  en el campo',
+  data: [
+    {
+      title: 'Las Heliconias',
+      subtitle: '¡Descubre el Paraíso Natural!',
+      text: 'A tan solo 5 km de Monterrey, Casanare, siguiendo la carretera que te lleva a Yopal, te espera un lugar encantador rodeado de naturaleza, un ambiente realmente magnífico y perfecto para toda la familia. En este rincón especial, te brindamos servicios de alojamiento rural que incluyen habitaciones amplias y muy cómodas. Además, podrás disfrutar de una piscina natural para darte un chapuzón en esos soleados días, y contamos con un restaurante campestre que ofrece un menú gourmet exquisito, pensado para satisfacer todos tus gustos culinarios. ¡Estamos ansiosos por recibirte y hacer que tu estadía sea inolvidable!',
+    },
+    {
+      title: 'Misión',
+      subtitle: 'Dejanos ser tu mejor experiencia',
+      text: 'Garantizar un servicio de alto estándar de calidad y confort, descanso y delite gastronómico enfocados en la satisfacción total de todos nuestros visitantes, creando una experiencia inolvidable mientras disfrutas de nuestro ambiente natural y ecológico de nuestras instalaciones.',
+    },
+    {
+      title: 'Porque elegirnos?',
+      subtitle: 'Una experiencia llanera',
+      text: 'Descubre el auténtica llano en las Heliconias. Naturaleza que inspira libertad, jardines multicolores que bailan con el viento, aves que pintan el cielo, y senderos que despiertan tu espíritu aventurero. Sumérgete en la cultura, sabores y tradiciones. Siente la calidez de los habitantes, conoce la vida en los llanos y déjate llevar por la magia de lo llanero.',
+    },
+  ]
+}
+
 export default function Home() {
-  return (
-    <div className='flex flex-col gap-20 justify-center place-items-center pb-8'>
-
-      <main className=" relative min-h-screen w-full h-[450px] bg-inicio">
-        <div className='absolute top-0 right-0 w-full flex flex-col justify-center h-full items-center bg-gray-400/60'>
-          <Image src='/logo.png' alt='logo' width={300} height={300} className=' ' />
-          <div className='max-w-3xl flex text-white  flex-col justify-center items-center text-center gap-2 text-xl'>
-            <p className=' font-bold text-3xl'>¡Descubre el Paraíso Natural en Centro Agroecoturístico Las Heliconias!</p>
-            <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única!!</p>
-            <a className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-800 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
-          </div>
+  return (<>
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-XV6KLVV3HH" />
+    <Script id='google-analytics'>
+      {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-XV6KLVV3HH');
+  `}
+    </Script>
+    <main className=" relative min-h-screen w-full h-[450px] bg-inicio">
+      <div className='absolute top-0 right-0 w-full flex flex-col justify-center h-full items-center bg-gray-400/60'>
+        <Image src='/logo.png' alt='logo' width={300} height={300} className=' ' />
+        <div className='max-w-3xl flex text-white  flex-col justify-center items-center text-center gap-2 text-xl'>
+          <p className=' font-bold text-3xl'>¡Descubre el Paraíso Natural en Centro Agroecoturístico Las Heliconias!</p>
+          <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única!!</p>
+          <a className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-800 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
         </div>
+      </div>
 
-      </main>
+    </main>
+    <div className='flex flex-col gap-20 justify-center place-items-center pb-8 lg:px-2 px-4 pt-20'>
+      <WhyUs data={text.data} title={text.title} />
       <Valores />
       <div>
         <Team />
@@ -47,5 +79,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+  </>
   )
 }

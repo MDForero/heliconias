@@ -14,7 +14,7 @@ export const metadata = {
 export default function page() {
     return (
         <div className="bg-gray-900">
-            <Banner />
+            <Banner fondo={'/fondos/contacto.JPG'} />
             {servicios.map((item, index) => (<CardServicios  data={item} key={index} even={index}/>))}
         </div>
     )
