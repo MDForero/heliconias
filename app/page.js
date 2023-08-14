@@ -6,6 +6,7 @@ import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-sv
 import Team from '../components/Team'
 import Script from 'next/script'
 import WhyUs from '@/components/WhyUs'
+import { contacto } from '@/data/data'
 
 export const metadata = {
   title: 'Las Heliconias',
@@ -19,16 +20,20 @@ const text = {
       title: 'Las Heliconias',
       subtitle: '¡Descubre el Paraíso Natural!',
       text: 'A tan solo 5 km de Monterrey, Casanare, siguiendo la carretera que te lleva a Yopal, te espera un lugar encantador rodeado de naturaleza, un ambiente realmente magnífico y perfecto para toda la familia. En este rincón especial, te brindamos servicios de alojamiento rural que incluyen habitaciones amplias y muy cómodas. Además, podrás disfrutar de una piscina natural para darte un chapuzón en esos soleados días, y contamos con un restaurante campestre que ofrece un menú gourmet exquisito, pensado para satisfacer todos tus gustos culinarios. ¡Estamos ansiosos por recibirte y hacer que tu estadía sea inolvidable!',
+      img: '/fondos/contacto.JPG',
+    
     },
     {
       title: 'Misión',
-      subtitle: 'Dejanos ser tu mejor experiencia',
-      text: 'Garantizar un servicio de alto estándar de calidad y confort, descanso y delite gastronómico enfocados en la satisfacción total de todos nuestros visitantes, creando una experiencia inolvidable mientras disfrutas de nuestro ambiente natural y ecológico de nuestras instalaciones.',
+      subtitle: 'Seremos tu mejor experiencia',
+      text: 'Garantizar un servicio de alto estándar de calidad y confort, descanso y deleite gastronómico enfocados en la satisfacción total de todos nuestros visitantes, creando una experiencia inolvidable mientras disfrutas de nuestro ambiente natural y ecológico de nuestras instalaciones.',
+      img: '/servicios/restaurante.jpg',
     },
     {
-      title: 'Porque elegirnos?',
+      title: '¿Por qué elegirnos?',
       subtitle: 'Una experiencia llanera',
-      text: 'Descubre el auténtica llano en las Heliconias. Naturaleza que inspira libertad, jardines multicolores que bailan con el viento, aves que pintan el cielo, y senderos que despiertan tu espíritu aventurero. Sumérgete en la cultura, sabores y tradiciones. Siente la calidez de los habitantes, conoce la vida en los llanos y déjate llevar por la magia de lo llanero.',
+      text: 'Descubre el auténtico llano en las Heliconias. Naturaleza que inspira libertad, jardines multicolores que bailan con el viento, aves que pintan el cielo, y senderos que despiertan tu espíritu aventurero. Sumérgete en la cultura, sabores y tradiciones. Siente la calidez de los habitantes, conoce la vida en los llanos y déjate llevar por la magia de lo llanero.',
+      img: '/fondos/nosotros.jpg',
     },
   ]
 }
@@ -50,7 +55,7 @@ export default function Home() {
         <div className='max-w-3xl flex text-white  flex-col justify-center items-center text-center gap-2 text-xl'>
           <p className=' font-bold text-3xl'>¡Descubre el Paraíso Natural en Centro Agroecoturístico Las Heliconias!</p>
           <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única!!</p>
-          <a className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-800 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
+          <a href={`https://wa.me/${contacto.telefono}`} className='flex flex-row justify-center items-center text-2xl font-bold bg-indigo-800 w-fit mx-auto p-2 rounded-xl ring-4 hover:ring-red-600 hover:bg-green'><p> Reserva ya!! </p> <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 w-12 h-12' /></a>
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import imgMuestra from '../public/hermosa-foto-lago-skadar-montenegro.jpg'
+import imgMuestra from '../public/defaultservices.jpg'
 import { imgs } from '@/data/data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight, faArrowCircleLeft, faClose } from '@fortawesome/free-solid-svg-icons'

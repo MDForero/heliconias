@@ -5,7 +5,7 @@ import Image from "next/image";
 import fondo from "../../public/fondos/alojamiento.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
-import {acomodaciones} from "@/data/data"
+import { acomodaciones } from "@/data/data"
 import WhyUs from "@/components/WhyUs";
 
 export const metadata = {
@@ -15,34 +15,42 @@ export const metadata = {
 }
 
 const text = {
-    title: 'Las Heliconias tu hogar  en el campo',
+    title: 'Comodidad y confort en un solo lugar',
     data: [
-      {
-        title: 'Las Heliconias',
-        subtitle: '¡Descubre el Paraíso Natural!',
-        text: 'A tan solo 5 km de Monterrey, Casanare, siguiendo la carretera que te lleva a Yopal, te espera un lugar encantador rodeado de naturaleza, un ambiente realmente magnífico y perfecto para toda la familia. En este rincón especial, te brindamos servicios de alojamiento rural que incluyen habitaciones amplias y muy cómodas. Además, podrás disfrutar de una piscina natural para darte un chapuzón en esos soleados días, y contamos con un restaurante campestre que ofrece un menú gourmet exquisito, pensado para satisfacer todos tus gustos culinarios. ¡Estamos ansiosos por recibirte y hacer que tu estadía sea inolvidable!',
-      },
-      {
-        title: 'Misión',
-        subtitle: 'Dejanos ser tu mejor experiencia',
-        text: 'Garantizar un servicio de alto estándar de calidad y confort, descanso y delite gastronómico enfocados en la satisfacción total de todos nuestros visitantes, creando una experiencia inolvidable mientras disfrutas de nuestro ambiente natural y ecológico de nuestras instalaciones.',
-      },
-      {
-        title: 'Porque elegirnos?',
-        subtitle: 'Una experiencia llanera',
-        text: 'Descubre el auténtica llano en las Heliconias. Naturaleza que inspira libertad, jardines multicolores que bailan con el viento, aves que pintan el cielo, y senderos que despiertan tu espíritu aventurero. Sumérgete en la cultura, sabores y tradiciones. Siente la calidez de los habitantes, conoce la vida en los llanos y déjate llevar por la magia de lo llanero.',
-      },
+        {
+            title: 'Habitaciones',
+            subtitle: '¡Descubre el Paraíso Natural!',
+            text: 'Sumérgete en comodidad en Centro Agroecoturístico Las Heliconias. Nuestras habitaciones, diseñadas con calidez y estilo llanero, te brindan un refugio acogedor en medio de la naturaleza. Cada espacio está cuidadosamente decorado para ofrecerte una experiencia auténtico y relajante. Además, siéntete bien sabiendo que nuestras instalaciones se mantienen con prácticas medioambientalmente sostenibles.',
+            img:'/servicios/alojamiento.jpg'
+        },
+        {
+            title: 'Piscina',
+            subtitle: 'Dejanos ser tu mejor experiencia',
+            text: 'Suma diversión y frescura en Centro Agroecoturístico Las Heliconias. Nuestra piscina natural es un oasis de alegría en medio de la exuberancia llanera. Al nadar en sus aguas cristalinas, rodeadas de la belleza natural, te revitalizarás cuerpo y espíritu. Aprovecha este espacio para relajarte en un entorno sostenible y en armonía con la naturaleza que nos rodea.',
+            img:'/servicios/piscina.jpg'
+        },
+        {
+            title: 'Tranquilidad',
+            subtitle: 'Una experiencia llanera',
+            text: '            Escapa del ajetreo en Centro Agroecoturístico Las Heliconias.Aquí experimentarás serenidad en su máxima expresión.Conecta con la quietud de los llanos y encuentra tu paz interior mientras te hospedas en nuestras cómodas habitaciones y exploras los vastos terrenos naturales.Nos enorgullece ser medioambientalmente sostenibles, brindándote un descanso que también cuida el entorno.',
+            img:'/fondos/contacto.jpg'
+        },
     ]
-  }
+}
 
 export default function page() {
     return (
         <div className=" text-gray-200 text-justify pb-16">
             <Banner fondo={fondo} imgPosition={'bottom'} />
-            <WhyUs/>
-            <section className="max-w-screen-xl mx-auto my-14 text-lg">
+            <section className="max-w-screen-xl flex flex-col gap-20 mx-auto my-14 text-lg">
+                <WhyUs data={text.data} title={text.title} />
                 {acomodaciones.map((item, index) => (<Acomodaciones acomodaciones={item} key={index} />))}
             </section>
         </div>
     )
 }
+
+
+
+
+

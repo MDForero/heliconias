@@ -1,6 +1,6 @@
 import CardServicios from "@/components/CardServicios"
 import Image from "next/image"
-import fondo from "../../public/hermosa-foto-lago-skadar-montenegro.jpg";
+import fondo from "../../public/defaultservices.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 import {servicios} from "@/data/data"

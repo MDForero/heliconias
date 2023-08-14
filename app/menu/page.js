@@ -1,5 +1,5 @@
 import Cardmenu from "@/components/Cardmenu";
-import fondo from "../../public/hermosa-foto-lago-skadar-montenegro.jpg";
+import fondo from "../../public/defaultservices.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/components/Banner";
@@ -16,7 +16,6 @@ export default function page() {
     return (
         <div>
             <Banner fondo={'/fondos/menu.JPG'}/>
-            <h1 className="text-4xl font-bold text-center pt-8 bg-gray-950/80 text-gray-100">Menú</h1>
             <section className="flex flex-row flex-wrap justify-evenly max-w-screen-2xl mx-auto">
                 {menu.map((item,index) => {
                     const style = {
@@ -32,23 +31,23 @@ export default function page() {
                             <Image src={item.img} alt={'imagen de la categoria' + item.category} width={0} height={0} className="lg:w-[500px] lg:h-[500px] lg:block hidden rounded-full" />
                             <div className="lg:w-3/5">
                                 <h1 className="text-3xl text-center pt-4 mb-4  first-letter:capitalize">{item.category}</h1>
-                                <div className="flex flex-row flex-wrap w-full gap-2">
+                                <div className="flex flex-row mx-2 flex-wrap w-full gap-2">
                                     {item.items.map((plate, index) => (<Cardmenu data={plate} key={index} id={item.category.slice(0, 3) + index} />))}
                                 </div>
                             </div>
                             <div style={style} className="w-full h-full -z-10 m-0 absolute top-0 right-0">
-                                <div className="w-full bg-gray-950/90 h-full">
+                                <div className="w-full bg-gray-950/70 h-full">
                                 </div>
                             </div>
                         </section>
                         : <div style={style} className="w-full">
-                            <div className="w-full bg-gray-950/90 text-gray-100">
+                            <div className="w-full bg-gray-950/70 text-gray-100">
                                 <section key={index} className=" border-separate border-spacing-6  h-fit max-w-6xl mx-auto  ">
                                     <h1 className="text-3xl text-center pt-4 mb-4 border-t-4 border-black first-letter:capitalize">{item.category}</h1>
                                     <div className="flex flex-row flex-wrap justify-center gap-3">
 
 
-                                        {item.items.map((item, index) => (<div key={index} className="md:w-2/5 h-full "><Cardmenu data={item}  center /></div>))}
+                                        {item.items.map((plate, index) => (<div key={index} className="w-full mx-2 md:w-2/5 h-full "><Cardmenu data={plate} id={item.category.slice(0, 3) + index} center /></div>))}
 
                                     </div>
                                 </section>

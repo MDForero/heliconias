@@ -15,10 +15,11 @@ export const metadata = {
 };
 
 const contactCard = [
-  { icon: faWhatsapp, href: 'https://wa.me/+57', text: contacto.telefono.slice(3) },
-  { icon: faPhone, href: 'tel:+57' + contacto.telefono , text: contacto.telefono.slice(3) },
+  { icon: faWhatsapp, href: 'https://wa.me/+57' + contacto.telefono.
+  slice(3), text: contacto.telefono.slice(3) },
+  { icon: faPhone, href: 'tel:+57'+'3124500289'  , text:'3124500289'  },
   { icon: faMapLocationDot, href: 'https://goo.gl/maps/WLU7yY3crtaeDz9v5', text: 'Bugambiles' },
-  { icon: faMailBulk, href: 'mailto:', text: 'contacto@lasheliconiasmonterrey.com' }
+  { icon: faMailBulk, href: 'mailto:'+ contacto.email , text: 'atencionalcliente@lasheliconiasmonterrey.com' }
 ]
 export default function page() {
   return (

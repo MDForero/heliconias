@@ -9,7 +9,7 @@ export default function page() {
         <h1>Normas en la piscina</h1>
         <article>
             <h2>1. Normas de uso de la piscina</h2>
-            <p>Es importante tener en cuenta las recomendaciones para evitar accidentes o sufrir ahogamientos, porque en Centro agroecoturistico las heliconias nos gusta cuidar tu bienestar.</p>
+            <p>Es importante tener en cuenta las recomendaciones para evitar accidentes o sufrir ahogamientos, ¿Por qué en Centro agroecoturistico las heliconias nos gusta cuidar tu bienestar.</p>
             <ol>
                 <li>Dúchate antes y después de ingresar a la piscina</li>
                 <li>El horario de uso de la piscina es de 8:00 a.m. a 8:00 p.m.</li>
@@ -26,7 +26,7 @@ export default function page() {
                 <li>Si vas a jugar con juguetes dentro del agua es importante que no los dejes ahí para evitar que a la hora de alguien lanzarse a jugar con ellos pueda accidentarse o lastimarse.</li>
                 <li>Lleva elementos de protección, como calzado de baño, toalla, crema solar y gorra.</li>
                 <li>En dado caso de alguien más sufrir un accidente dentro de la piscina, es importante acudir a un adulto mayor o personal encargado de resolver este tipo de situaciones.</li>
-                <li>Entra con calma al agua: Evita correr y entrar acelerado al agua porque puede causarte accidentes, caerte, tropezar con alguien o cortarse la digestión y dolerte el estómago.</li>
+                <li>Entra con calma al agua: Evita correr y entrar acelerado al agua ¿Por qué puede causarte accidentes, caerte, tropezar con alguien o cortarse la digestión y dolerte el estómago.</li>
                 <li>Los cerramientos se deben respetar: Están puestos para evitar accidentes o el ingreso de personas no autorizadas, no las abras sin autorización.</li>
             </ol>
             <p>Para garantizar tu propia seguridad y la del resto de bañistas, merece la pena conocer y cumplir las normas generales de uso de una piscina. Explícaselas también a tus hijos. Usar ropa de baño adecuada y comportarse de forma cuidadosa y consciente ayudan siempre a prevenir accidentes. ¡Es la mejor forma para que nada nos impida disfrutar del placer que es nadar!</p>
