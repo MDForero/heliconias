@@ -41,10 +41,9 @@ const politicas = [
 ]
 
 const redes = [
-  { icon: faFacebook, href: 'https://www.facebook.com/lasheliconias' },
-  { icon: faInstagram, href: 'https://www.instagram.com/lasheliconias/' },
-  { icon: faWhatsapp, href: 'https://api.whatsapp.com/send?phone=573016000000&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios' },
-  { icon: faYoutube, href: '#' },
+  { icon: faFacebook, href: 'https://www.facebook.com/lasheliconiascentroagroturistico' },
+  { icon: faInstagram, href: 'https://www.instagram.com/heliconiasagroturistico/' },
+  { icon: faWhatsapp, href: `https://api.whatsapp.com/send?phone=${contacto.telefono}&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios` },
   { icon: faTiktok, href: 'https://www.tiktok.com/@heliconiasmon' },
 ]
 
@@ -59,7 +58,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <CartProvider>
           <Nav nav1={nav1} nav2={nav2}/>
-          <section className="bg-gray-900 text-gray-300 py-12 overflow-hidden">
+          <section className="bg-gray-900 text-gray-300 pb-12 overflow-hidden">
             <a href={`https://api.whatsapp.com/send?phone=${contacto.telefono}&text=Hola vengo de tu pagina web+`} target='_blank' className='fixed text-white bg-green-600 rounded-full px-1 bottom-2 right-2 z-10  hover:animate-[ping_0.3s_ease-in-out_1]'><FontAwesomeIcon icon={faWhatsapp} className='text-green-5001 text-5xl' /></a>
             {children}
           </section>

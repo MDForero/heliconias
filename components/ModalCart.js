@@ -38,31 +38,30 @@ const ModalCart = ({ show, onHide }) => {
                       <tr className="bg-gray-100 text-center">
                         <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200">id</th>
                         <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200">Producto</th>
-                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden sm:block">Cantidad</th>
-                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 sm:hidden">Cant.</th>
-                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden sm:block">Precio</th>
+                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden md:table-cell">Cant.</th>
+                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden md:table-cell">Precio</th>
                         <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200">Subtotal</th>
-                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden sm:block">eliminar</th>
-                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 sm:hidden">X</th>
+                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden md:table-cell">eliminar</th>
+                        <th scope="col" className="md:px-5 px-1 py-3 text-sm font-normal text-center text-gray-800 uppercase bg-white border-b border-gray-200 hidden md:table-cell">X</th>
                       </tr>
                     </thead>
                     <tbody>
                       {cart.cart.map((item, index) => {
                         console.log(item.id)
                         return (<tr key={index}>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap">{item.id}</p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap">{item.nombre}</p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap">{item.cantidad}</p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b hidden sm:block border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b hidden md:table-cell border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap ">{item.precio}</p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap">{item.precio * item.cantidad}</p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200">
                                 <p className="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE_ONE", payload: item })}><FontAwesomeIcon icon={faTrash} size='xl' className='px-1' /></button></p></td>
-                          <td className="md:px-5 md:py-5 text-sm bg-white border-b border-gray-200 hidden sm:block">
+                          <td className="h-full text-center  md:px-5 md:py-5 text-sm bg-white border-b border-gray-200 hidden md:table-cell">
                                 <p className="text-gray-900 whitespace-no-wrap"><button onClick={() => dispatch({ type: "REMOVE", payload: item })}>Eliminar</button></p></td>
                         </tr>)
                       })}

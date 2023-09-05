@@ -16,7 +16,7 @@ export default function page() {
     return (
         <div>
             <Banner fondo={'/fondos/menu.JPG'}/>
-            <section className="flex flex-row flex-wrap justify-evenly max-w-screen-2xl mx-auto">
+            <section className="flex flex-row  flex-wrap md:justify-evenly justify-center items-center max-w-screen-2xl w-full mx-auto">
                 {menu.map((item,index) => {
                     const style = {
                         backgroundImage: `url(${item.img})`,
@@ -27,11 +27,11 @@ export default function page() {
                     }
                     return item.category != 'bebidas' && item.category != 'adicionales' ?
 
-                        <section key={index} className="border-separate z-0 relative flex md:flex-row  text-gray-100 md:flex-nowrap flex-wrap   justify-center items-center  gap-3 even:flex-row-reverse border-spacing-6  max-w-screen-2xl xl:px-24 min-h-screen mx-auto ">
+                        <section key={index} className="border-separate z-0 relative flex md:flex-row  text-gray-100 md:flex-nowrap flex-wrap   justify-center items-center  gap-3 even:flex-row-reverse border-spacing-6  max-w-screen-2xl xl:px-24 md:py-32 mx-auto  ">
                             <Image src={item.img} alt={'imagen de la categoria' + item.category} width={0} height={0} className="lg:w-[500px] lg:h-[500px] lg:block hidden rounded-full" />
-                            <div className="lg:w-3/5">
+                            <div className="lg:w-3/5 px-1">
                                 <h1 className="text-3xl text-center pt-4 mb-4  first-letter:capitalize">{item.category}</h1>
-                                <div className="flex flex-row mx-2 flex-wrap w-full gap-2">
+                                <div className="flex flex-row mx-auto flex-wrap w-full gap-2">
                                     {item.items.map((plate, index) => (<Cardmenu data={plate} key={index} id={item.category.slice(0, 3) + index} />))}
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ export default function page() {
                         </section>
                         : <div style={style} className="w-full">
                             <div className="w-full bg-gray-950/70 text-gray-100">
-                                <section key={index} className=" border-separate border-spacing-6  h-fit max-w-6xl mx-auto  ">
+                                <section key={index} className=" border-separate border-spacing-6  h-fit max-w-6xl mx-auto py-12 ">
                                     <h1 className="text-3xl text-center pt-4 mb-4 border-t-4 border-black first-letter:capitalize">{item.category}</h1>
                                     <div className="flex flex-row flex-wrap justify-center gap-3">
 

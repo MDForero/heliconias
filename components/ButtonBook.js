@@ -10,7 +10,7 @@ const ButtonBook = () => {
     <div className=' grid grid-cols-2 pt-8 gap-2'>
         <h2 className='text-2xl col-span-2 font-bold text-center text-gray-500'>Reserva ahora</h2>
         <ul className='flex flex-row gap-2 place-content-end'>
-            <li><a href='#'><FontAwesomeIcon icon={faAirbnb} className='w-12 h-12 text-pink-800'/></a></li>
+            <li><a href='https://www.airbnb.com.co/rooms/941433346919243287?preview_for_ml=true&source_impression_id=p3_1693534427_cPu9timn%2F%2BvRsBoG'><FontAwesomeIcon icon={faAirbnb} className='w-12 h-12 text-pink-800'/></a></li>
             <li><a href='https://www.booking.com/hotel/co/centro-agroecoturistico-las-heliconias.es.html?lang=es'><Image alt='logo de booking' src={booking} className='w-12 h-12'/></a></li>
             <li><a href={`http://wa.me/${contacto.telefono}`}><FontAwesomeIcon icon={faWhatsapp} className='w-12 h-12 text-green-700' /></a></li>
         </ul>

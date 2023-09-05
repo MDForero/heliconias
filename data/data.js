@@ -1,16 +1,7 @@
 // imagenes para la galeria
-import galeria1 from '../public/galeria/galeria1.jpg';
-import galeria2 from '../public/galeria/galeria2.jpg';
-import galeria3 from '../public/galeria/galeria3.jpg';
-import galeria4 from '../public/galeria/galeria4.jpg';
-import galeria5 from '../public/galeria/galeria5.jpg';
-import galeria6 from '../public/galeria/galeria6.jpg';
-import galeria7 from '../public/galeria/galeria7.jpg';
-import galeria8 from '../public/galeria/galeria8.jpg';
-import galeria9 from '../public/galeria/galeria9.jpg';
-import galeria10 from '../public/galeria/galeria10.jpg';
-import galeria11 from '../public/galeria/galeria11.jpg';
+
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBicycle, faBiking, faBirthdayCake, faCampground, faCircleStop, faHorse, faParking, faStore, faSwimmingPool, faTree, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 export const contacto = {
     telefono: '+573125663828',
@@ -23,49 +14,138 @@ export const contacto = {
 
 export const imgs = [
     {
-        src: galeria1,
-        alt: 'galeria1'
+        src: '/habitaciones/IMG_1157.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria2,
-        alt: 'galeria2'
+        src: '/habitaciones/IMG_1196.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria3,
-        alt: 'galeria3'
+        src: '/habitaciones/IMG_1253.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria4,
-        alt: 'galeria4'
+        src: '/habitaciones/banos.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria5,
-        alt: 'galeria5'
+        src: '/habitaciones/doble1.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria6,
-        alt: 'galeria6'
+        src: '/habitaciones/doble2.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria7,
-        alt: 'galeria7'
+        src: '/habitaciones/multifamiliar1.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria8,
-        alt: 'galeria8'
+        src: '/habitaciones/multifamiliar2.JPG',
+        alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: galeria9,
-        alt: 'galeria9'
+        src: '/fondos/photo1691765475.jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
     },
     {
-        src: galeria10,
-        alt: 'galeria10'
+        src: '/fondos/photo1691765475 (1).jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
     },
     {
-        src: galeria11,
-        alt: 'galeria11'
+        src: '/fondos/photo1691765473.jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
     },
+    {
+        src: '/fondos/photo1691765473 (2).jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/photo1691765473 (1).jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/photo1691764047.jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/nosotros.JPG',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/menu.JPG',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/inicio.jpeg',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/fondoinicio.JPG',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/contacto.JPG',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/fondos/alojamiento.JPG',
+        alt: '/galeria/Imagen correspondiente a la galeria'
+    },
+    {
+        src: '/galeria/galeria1.jpg',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria10.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria11.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria2.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria3.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria4.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria5.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria6.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria7.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria8.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/galeria/galeria9.JPG',
+        alt: "imagenes correspondientes a la galeria"
+    },
+    {
+        src: '/menu/Carne.jpg',
+        alt: 'Mas fotos del menu',
+    },
+
+
+
+
+
 ]
 
 export const colaboradores = [
@@ -165,6 +245,7 @@ export const colaboradores = [
 
 ]
 
+
 export const menu = [
 
     {
@@ -174,18 +255,18 @@ export const menu = [
             {
                 descripcion: "Churrasco argentino (400g): corte mariposa, acompañado de papa a la francesa, ensalada de aguacate y chimichurri de la casa.",
                 precio: 35000,
-                img:'/menu/churrasco-argentino.png'
+                img: '/menu/churrasco-argentino.png'
 
             },
             {
                 descripcion: "Carne oreada (400g): de carne oreada al humo, acompañada de yuca blanca, arepa arriera, ensalada de aguacate y ají molido.",
                 precio: 26000,
-                img:'/menu/carneoreada.png'
+                img: '/menu/carneoreada.png'
             },
             {
                 descripcion: "Costillas de cerdo BBQ (400g): bañados en salsa BBQ, acompañado de papa criollas, plátano maduro y ensalada.",
                 precio: 28000,
-                img:'/menu/Costillas-de-cerdo-bbq.png'
+                img: '/menu/Costillas-de-cerdo-bbq.png'
             }]
     },
 
@@ -196,22 +277,22 @@ export const menu = [
             {
                 descripcion: "Pechuga a la plancha (400g): acompañada de papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 25000,
-                img:'/menu/pechuga-a-la-plancha.png'
+                img: '/menu/pechuga-a-la-plancha.png'
             },
             {
                 descripcion: "Pechuga gratinada (400g): acompañada con queso gratinado, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 28000,
-                img:'/menu/pechuga-gratinada.png'
+                img: '/menu/pechuga-gratinada.png'
             },
             {
                 descripcion: "Pechuga salsa champiñones (400g): acompañada con champiñones, papa a la francesa, patacón, arroz blanco y ensalada.",
-                precio: 28000,
-                img:'/menu/pechuga-en-salsa-champinones.png'
+                precio: 33000,
+                img: '/menu/pechuga-en-salsa-champinones.png'
             },
             {
                 descripcion: "Pechuga salsa camarones (400g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000,
-                img:'/defaultmenu.JPG'
+                img: '/defaultmenu.JPG'
             },
         ]
     },
@@ -222,48 +303,48 @@ export const menu = [
             {
                 descripcion: "Cazuela de mariscos: acompañada de patacón, arroz blanco, aguacate y limón              ",
                 precio: 45000.,
-                img:'/menu/cazuela-de-mariscos.png'
+                img: '/menu/cazuela-de-mariscos.png'
             },
             {
                 descripcion: "Cazuela de bagre en salsa (400g): acompañados con yuca en salsa, arroz blanco, patacón y ensalada.",
                 precio: 35000,
-                img:'/menu/Cazuela-bagre-en-salsa.png'
+                img: '/menu/Cazuela-bagre-en-salsa.png'
             },
             {
                 descripcion: "Bagre frito (400g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 33000,
-                img:'/menu/bagre-frito.png'
-                
+                img: '/menu/bagre-frito.png'
+
             },
             {
                 descripcion: "Cazuela de mojarra en salsa (600g): acompañados con yuca en salsa, arroz blanco, patacón y ensalada.",
                 precio: 30000,
-                img:'/defaultmenu.JPG'
+                img: '/menu/cazuela.jpg'
             },
             {
                 descripcion: "Mojarra frita (600g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 27000,
-                img:'/menu/mojarra-frita.png'
+                img: '/menu/mojarra-frita.png'
             },
             {
                 descripcion: "Trucha saludable (500g): acompañada de fresas, naranja, aguacate, limón, mandarina y espinacas.",
                 precio: 30000,
-                img:'/menu/trucha-saludable.png'
+                img: '/menu/trucha-saludable.png'
             },
             {
                 descripcion: "Trucha a la plancha (500g): acompañados con papa a la francesa, arroz blanco, patacón y ensalada.",
                 precio: 30000,
-                img:'/defaultmenu.JPG'
+                img: '/defaultmenu.JPG'
             },
             {
                 descripcion: "Trucha en salsa de champiñones (500g): acompañada con champiñones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 33000,
-                img:'/defaultmenu.JPG'
+                img: '/menu/Trucha-champi.png'
             },
             {
                 descripcion: "Trucha en salsa de camarones (500g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000,
-                img:'/menu/Trucha-salsa-camarones.png'
+                img: '/menu/Trucha-salsa-camarones.png'
             }]
     },
     {
@@ -273,12 +354,12 @@ export const menu = [
             {
                 descripcion: "Sancocho de Gallina campesina para 6 personas: 6 platos de sancocho, acompañados con una gallina campesina, arroz con menudencias, arepas boyacenses, aguacate, una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img:'/menu/Sancocho-gallina.png'
+                img: '/menu/Sancocho-gallina.png'
             },
             {
                 descripcion: "consomé de Gallina campesina para 6 personas: 6 platos de consomé, acompañados con una gallina campesina dorada, arroz con menudencias, guatila, ahuyama, mazorca y una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img:'/menu/Sancocho-gallina.png'
+                img: '/menu/Sancocho-gallina.png'
             }]
     },
     {
@@ -288,13 +369,30 @@ export const menu = [
             {
                 descripcion: "hamburguesa sencilla (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado y queso.",
                 precio: 14000,
-                img:'/menu/Hamburguesa.png'
+                img: '/menu/hamburguesa_sencilla.jpg'
             },
             {
                 descripcion: "hamburguesa en combo (120g): de carne Angus, acompañada de pan artesanal, cebolla caramelizada, jamón ahumado, queso, papa a la francesa gaseosa 350 ml",
                 precio: 20000,
-                img:'/menu/Hamburguesa.png'
+                img: '/menu/Hamburguesa.png'
             }]
+    },
+
+    {
+        category: 'Desayuno tipo americano',
+        items: [
+            { descripcion: 'Combo 1 Huevos acompañados con pan, bebida fría o caliente, Pericos, Fritos, Batidos', precio: 10000, img: "/defaultmenu.JPG" },
+            { descripcion: 'Combo 2 Suprema de fruta, acompañada de bebida fría o caliente, Papaya, Mango, Patilla ', precio: 10000, img: "/defaultmenu.JPG" },],
+        img: '/menu/Hamburguesa.png'
+    },
+    {
+        category: 'Desayuno especial',
+        img: '/defaultmenu.JPG',
+        items: [
+            { descripcion: 'Combo 3 Caldo de cachama, acompañado de arepa, bandeja, Carne en bisté, Arroz , Ensalada, bebida fría o caliente', precio: 18000, img: "/defaultmenu.JPG" },
+            { descripcion: 'Combo 4 Caldo de costilla, acompañado de arepa, huevos., champiñones, rancheros, maíz, bebida fría o caliente', precio: 18000, img: "/defaultmenu.JPG" },
+            { descripcion: 'Combo 5 Changua, acompañado de tostadas, Hallaca , Bebida fría o caliente ', precio: 18000, img: "/defaultmenu.JPG" },
+        ],
     },
     {
         category: 'bebidas',
@@ -303,87 +401,87 @@ export const menu = [
             {
                 descripcion: 'gaseosa 350 ml',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'gaseosa litro ¼',
                 precio: 7000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'gaseosa 3 litros',
                 precio: 9000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'jugo hit 600 ml',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'agua en botella con o sin gas 600ml',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'vive 100',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'soda bretaña',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'jugo natural agua',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: ' jugo natural leche',
                 precio: 6000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Jarra limonada:',
                 precio: 6000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Jarra naranjada o Mandarinada:',
                 precio: 10000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Águila original, costeña bacana',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'águila ligth',
                 precio: 3500,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Club Colombia',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Coronita',
                 precio: 5000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Cerveza en lata águila original – costeña bacana',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Aguardiente antioqueño ½',
                 precio: 45000,
-                img:""
+                img: ""
             },
         ]
     },
@@ -394,37 +492,37 @@ export const menu = [
             {
                 descripcion: 'Porción de arroz:',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Porción patacón:',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Porción papa francesa:',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Porción papa criolla: ',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Porción plátano:',
                 precio: 4000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Arepas arriera: ',
                 precio: 3000,
-                img:""
+                img: ""
             },
             {
                 descripcion: 'Porción aguacate: ',
                 precio: 5000,
-                img:""
+                img: ""
             },
         ]
     }
@@ -439,27 +537,27 @@ export const acomodaciones = [
         acomodacion: [{
             img: '/habitaciones/doble1.JPG',
             alt: "Habitación doble vista general",
-            
+
         },
         {
             img: '/habitaciones/doble2.JPG',
             alt: "vista2",
-            
+
         },
         {
             img: '/habitaciones/banos.JPG',
             alt: "vista4",
-            
+
         },
         {
             img: '/fondos/fondoinicio.JPG',
             alt: "vista3",
-            
+
         },
         {
             img: '/fondos/contacto.JPG',
             alt: "vista5",
-            
+
         }]
     },
     {
@@ -468,27 +566,27 @@ export const acomodaciones = [
         acomodacion: [{
             img: '/habitaciones/multifamiliar1.JPG',
             alt: "vista1",
-            
+
         },
         {
             img: '/habitaciones/multifamiliar2.JPG',
             alt: "vista2",
-            
+
         },
         {
             img: '/habitaciones/banos.JPG',
             alt: "vista4",
-            
+
         },
         {
             img: '/fondos/fondoinicio.JPG',
             alt: "vista3",
-            
+
         },
         {
             img: '/fondos/contacto.JPG',
             alt: "vista5",
-            
+
         }]
     },
 ]
@@ -497,56 +595,99 @@ export const servicios = [
     {
         title: "Piscina natural:",
         descripcion: "comprometidos con el medio ambiente te ofrecemos un espacio libre de cloro y químico para disfrutar de un chapuzón y un día soleado (9 am a 8 pm ( miércoles y jueves no contamos con servicio de piscina )",
-        img:'/servicios/piscina.jpg',
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Alojamiento rural:",
         descripcion: " contamos con amplias y cómodas habitaciones estándar doble, triple, tenemos las mejores tarifas el mercado.",
-        img:'/servicios/alojamiento.jpg',
+        img: '/servicios/alojamiento.jpg',
     },
     {
         title: "Restaurante campestre:",
-        descripcion: "Nuestro restaurante campestre está rodeado con un hermoso y tranquilo paisaje al aire libre, donde encontrarás un delicioso y variado menú para que disfrutes de un momento agradable junto a tu familia o amigos.Desayuno(7am a 10 am) almuerzo(12 am a 3pm) cena(6 pm a 8pm)",
-        img:'/servicios/restaurante.jpg',
+        descripcion: "Nuestro restaurante campestre está rodeado con un hermoso y tranquilo paisaje al aire libre, donde encontrarás un delicioso y variado menú para que disfrutes de un momento agradable junto a tu familia o amigos.",
+        img: '/servicios/restaurante.jpg',
     },
     {
         title: "Estacionamiento gratis:",
         descripcion: "Contamos con estacionamiento privado y gratuito ",
-        img:'/servicios/parking.jpg',
+        img: '/servicios/parking.jpg',
     },
     {
         title: "Cancha de tejo:",
-        descripcion: "Contamos con cancha de Mini Tejo y poli tejo, para empresas grupo de amigos y familia. (10 am a 6pm)",
-        img:'/servicios/tejo.jpg',
+        descripcion: "Contamos con cancha de Mini Tejo y poli tejo, para empresas grupo de amigos y familia.",
+        img: '/servicios/tejo.jpg',
     },
     {
         title: "Camping:",
-        descripcion: "¡Acampa en familia bajo la luz de las estrellas, acompañados de una fogata!  Llegada 3pm salida 12 am",
-        img:'/servicios/piscina.JPG',
+        descripcion: "¡Acampa en familia bajo la luz de las estrellas, acompañados de una fogata!",
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Sendero ecológico:",
         descripcion: "Caminar en medio de la naturaleza, disponemos de un sendero interpretativo, que te invita a disfrutar de todas las bondades de la naturaleza y la vegetación en un ambiente de tranquilidad al aire puro. ",
-        img:'/servicios/piscina.JPG',
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Tienda campesina:",
         descripcion: "Productos Naturales, Orgánicos y Artesanales cultivados en nuestro campo ",
-        img:'/servicios/piscina.JPG',
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Eventos:",
         descripcion: "Cumpleaños, bautismos, fiestas de quince, cenas navideñas, matrimonios, celebra con nosotros tus fechas especiales.",
-        img:'/servicios/piscina.JPG',
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Ruta recreativa y alta montaña en bici:",
         descripcion: "Contamos con dos rutas marcadas en la aplicación strava, ruta recreativa que cuenta con 18 km con terrenos llanos y repechos donde disfrutaras de hermosos paisajes y fuentes hídricas.Ruta de alta montaña 64 km donde disfrutaras de 10 km de alta montaña donde veras paisajes y miradores exóticos de la región.",
-        img:'/servicios/piscina.JPG',
+        img: '/servicios/piscina.jpg',
     },
     {
         title: "Cabalgatas:",
         descripcion: "convivir con la naturaleza mientras montas un caballo, una experiencia única con los mejores caballos de la región, disfruta de esta actividad a pocos kilómetros de nuestra ubicación en rancho equino el morichal.",
-        img:'/servicios/piscina.JPG',
+        img: '/servicios/piscina.jpg',
     }
+]
+
+export const cardservices = [
+    {
+        icon: faSwimmingPool,
+        title: "Piscina natural",
+    },
+    {
+        icon: faUtensils,
+        title: "Restaurante campestre",
+    },
+    {
+        icon: faParking,
+        title: "Estacionamiento gratis",
+    },
+    {
+        icon: faCircleStop,
+        title: "Cancha de tejo",
+    },
+    {
+        icon: faCampground,
+        title: "Camping",
+    },
+    {
+        icon: faTree,
+        title: "Sendero ecológico",
+    },
+    {
+        icon: faStore,
+        title: "Tienda campesina",
+    },
+    {
+        icon: faBirthdayCake,
+        title: "Eventos",
+    },
+    {
+        icon: faBiking,
+        title: "Ruta recreativa y alta montaña en bici",
+    },
+    {
+        icon: faHorse,
+        title: "Cabalgatas",
+    },
 ]

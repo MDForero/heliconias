@@ -16,8 +16,8 @@ const WhyUs = ({data, title}) => {
             <div className=' lg:w-2/5 w-full px-4  text-justify text-gray-200'>
                 <header>
                     <nav>
-                        <ul className='flex flex-row flex-wrap md:flex-nowrap justify-evenly  mb-0 gap-6 w-full'>
-                        {data.map((item, index)=><li key={index}><button className='button  w-full' onClick={() => setActive(item)}>{item.title}</button></li>
+                        <ul className='flex flex-row wrap md:flex-nowrap justify-evenly  mb-0 gap-6 w-full'>
+                        {data.map((item, index)=><li key={index}><button className='button px-2 w-full' onClick={() => setActive(item)}>{item.title}</button></li>
                             )}
                         </ul>
                     </nav>

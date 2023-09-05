@@ -33,7 +33,7 @@ const text = {
             title: 'Tranquilidad',
             subtitle: 'Una experiencia llanera',
             text: '            Escapa del ajetreo en Centro Agroecoturístico Las Heliconias.Aquí experimentarás serenidad en su máxima expresión.Conecta con la quietud de los llanos y encuentra tu paz interior mientras te hospedas en nuestras cómodas habitaciones y exploras los vastos terrenos naturales.Nos enorgullece ser medioambientalmente sostenibles, brindándote un descanso que también cuida el entorno.',
-            img:'/fondos/contacto.jpg'
+            img:'/fondos/contacto.JPG'
         },
     ]
 }

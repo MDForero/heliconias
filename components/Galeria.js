@@ -8,7 +8,7 @@ import { faArrowAltCircleRight, faArrowCircleLeft, faClose } from '@fortawesome/
 import { ImageList, ImageListItem } from '@mui/material'
 import { faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons'
 
-const Galeria = () => {
+const Galeria = ({galeria}) => {
   const [img, setImg] = useState()
   const handleClickLeft = () => {
     const index = imgs.findIndex(item => item.src === img.src)
@@ -36,7 +36,7 @@ const Galeria = () => {
             <button onClick={() => handleClickLeft()} className='place-self-center  rounded-full h-12 w-12'>
               <FontAwesomeIcon icon={faArrowCircleLeft} size='xl' />
             </button>
-            <Image src={img.src} width={0} height={0} alt={img.alt} className='h-[600px]' />
+            <Image src={img.src} width={0} height={0} alt={img.alt} className='w-full object-cover h-[600px]' />
             <button onClick={() => handleClickRight()} className='place-self-center  object-cover rounded-full h-12 w-12'>
               <FontAwesomeIcon icon={faArrowAltCircleRight} size='xl' />
             </button>
@@ -50,7 +50,7 @@ const Galeria = () => {
           {imgs.map((item, index) => (
             <button onClick={() => setImg(item)} key={index}>
               
-                <Image src={item.src} width={0} height={0} alt={item.alt} className='rounded-xl object-cover'/>
+                <Image src={item.src} width={0} height={0} alt={item.alt} className='rounded-xl w-full h-full object-cover'/>
               
             </button>
           ))}

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCartShopping, faTimes } from '@fortawesome/free-solid-svg-icons'
 import logo from '../public/logo.png'
-import { useState } from 'react'
+import { use, useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import ModalCart from './ModalCart'
 
@@ -17,12 +17,24 @@ const Nav = ({ nav1, nav2 }) => {
     const [showMenu, setShowMenu] = useState(false)
     const cart = useCart()
     const [show, setShow] = useState(false)
+    const [fixed, setFixed] = useState(false)
     const handleShow = () => {
         setShow(!show)
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setFixed(true)
+            } else {
+                setFixed(false)
+            }
+        })
+    }, [])
+
+
     return (
-        <div className=' bg-gray-900 w-full  border-b-2 - border-double border-gray-100 z-50 fixed '>
+        <div className={`${fixed?'fixed ': ""} bg-gray-900 w-full  border-b-2 - border-double border-gray-100 z-50 `}>
 
             <nav className=" text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
 
@@ -51,7 +63,7 @@ const Nav = ({ nav1, nav2 }) => {
                         </Link>)
                     })}
                 </div>
-                <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 lg:hidden " : "hidden ") + "fixed  top-0 left-0 flex flex-col justify-center items-center h-screen  right-0 lg:hidden w-full "}>
+                <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 lg:hidden " : "hidden ") + "fixed z-50 top-0 left-0 flex flex-col justify-center items-center h-screen  right-0 lg:hidden w-full "}>
                     <button className='absolute top-4 right-4' onClick={()=>setShowMenu(!showMenu)}><FontAwesomeIcon icon={faTimes} size='2x' className='text-gray-100' /> </button>
                     {nav1.concat(nav2).map((item, index) => (<Link key={index} className="block mt-4 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href={item.href}>
                         {item.label}
