@@ -1,7 +1,7 @@
 // imagenes para la galeria
 
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faBicycle, faBiking, faBirthdayCake, faCampground, faCircleStop, faHorse, faParking, faStore, faSwimmingPool, faTree, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { faBicycle, faBiking, faBirthdayCake, faCampground, faCircleStop, faDog, faHorse, faParking, faStore, faSwimmingPool, faTree, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 export const contacto = {
     telefono: '+573125663828',
@@ -615,12 +615,12 @@ export const servicios = [
     {
         title: "Cancha de tejo:",
         descripcion: "Contamos con cancha de Mini Tejo y poli tejo, para empresas grupo de amigos y familia.",
-        img: '/servicios/tejo.jpg',
+        img: '/servicios/tejo.jpeg',
     },
     {
         title: "Camping:",
-        descripcion: "¡Acampa en familia bajo la luz de las estrellas, acompañados de una fogata!",
-        img: '/servicios/piscina.jpg',
+        descripcion: "¡Acampa en familia bajo la luz de las estrellas, acompañados de una fogata!, si no traes tu carpa no te preocupes, nosotros te la alquilamos y te brindamos el servicio de baño, ducha, piscina y desayuno.",
+        img: '/servicios/camping.jpeg',
     },
     {
         title: "Sendero ecológico:",
@@ -630,17 +630,17 @@ export const servicios = [
     {
         title: "Tienda campesina:",
         descripcion: "Productos Naturales, Orgánicos y Artesanales cultivados en nuestro campo ",
-        img: '/servicios/piscina.jpg',
+        img: '/servicios/tienda_campesina.jpeg',
     },
     {
         title: "Eventos:",
         descripcion: "Cumpleaños, bautismos, fiestas de quince, cenas navideñas, matrimonios, celebra con nosotros tus fechas especiales.",
-        img: '/servicios/piscina.jpg',
+        img: '/servicios/eventos.jpeg',
     },
     {
         title: "Ruta recreativa y alta montaña en bici:",
         descripcion: "Contamos con dos rutas marcadas en la aplicación strava, ruta recreativa que cuenta con 18 km con terrenos llanos y repechos donde disfrutaras de hermosos paisajes y fuentes hídricas.Ruta de alta montaña 64 km donde disfrutaras de 10 km de alta montaña donde veras paisajes y miradores exóticos de la región.",
-        img: '/servicios/piscina.jpg',
+        img: '/servicios/bicicleta.jpeg',
     },
     {
         title: "Cabalgatas:",
@@ -653,6 +653,10 @@ export const cardservices = [
     {
         icon: faSwimmingPool,
         title: "Piscina natural",
+    },
+    {
+        icon: faDog,
+        title: "Permitimos mascotas",
     },
     {
         icon: faUtensils,

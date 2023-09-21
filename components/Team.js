@@ -8,14 +8,14 @@ const Team = () => {
         <div>
 
             <div className="p-4">
-                <p className="text-3xl font-bold text-center text-gray-800">
+                <p className="text-3xl font-bold text-center text-gray-200">
                     Nuestro equipo
                 </p>
-                <p className="mb-32 text-xl font-normal text-center text-gray-500">
+                <p className="mb-32 text-xl font-normal text-center text-gray-50">
                     Conoce a las personas que hacen posible este proyecto
                 </p>
                 <div className="flex flex-col flex-wrap  items-center space-y-24 md:space-y-0 md:flex-row justify-center">
-                {colaboradores.map((colaborador, index) => (<div  key={index}  className="relative p-4">
+                    {colaboradores.map((colaborador, index) => (<div key={index} className="relative p-4">
                         <div className="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                             {colaborador.img &&
                                 <div className="relative block">
@@ -36,8 +36,8 @@ const Team = () => {
                                 </p>
                             </div>
                             <div className="flex items-center justify-evenly w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
-                                {colaborador.redes.map((red, index)=>(<a key={index} href={red.href}>
-                                   <FontAwesomeIcon icon={red.icon} className="text-4xl transition-colors duration-200 hover:text-gray-800 "/>
+                                {colaborador.redes.map((red, index) => (<a key={index} href={red.href}>
+                                    <FontAwesomeIcon icon={red.icon} className="text-4xl transition-colors duration-200 hover:text-gray-800 " />
                                 </a>))}
                             </div>
                         </div>

@@ -7,6 +7,7 @@ import Valores from "@/components/Valores";
 import fondo from "../../public/fondos/nosotros.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
+import Team from "@/components/Team";
 
 export const metadata = {
     title: "Nosotros",
@@ -34,6 +35,9 @@ export default function page() {
                 </article>
             </section>
             <Valores />
+            <div className="max-w-7xl w-full mx-auto">
+                <Team />
+            </div>
         </div>
     )
 }

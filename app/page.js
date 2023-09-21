@@ -64,13 +64,13 @@ export default function Home() {
     <div className='flex flex-col gap-20 justify-center place-items-center pb-8 lg:px-2 px-4 pt-20'>
       <section id='servicios'>
         <h2 className='text-4xl font-bold text-center pt-8 pb-16 first-letter:capitalize text-gray-300'>nuestros servicios</h2>
-        <div className='flex flex-row text-center flex-wrap gap-12 justify-center'>
+        <div className='flex flex-row text-center flex-wrap gap-12 justify-center max-w-7xl mx-auto'>
           {cardservices.map((item, index) => <Card key={index} data={item} />)}
         </div>
       </section>
       <WhyUs data={text.data} title={text.title} />
       <Valores />
-      <div>
+      <div className='max-w-7xl w-full mx-auto'>
         <Team />
       </div>
       <section className=''>
