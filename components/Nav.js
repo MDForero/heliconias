@@ -34,18 +34,21 @@ const Nav = ({ nav1, nav2 }) => {
 
 
     return (
-        <div className={`${fixed?'fixed ': ""} bg-gray-900 w-full  border-b-2 - border-double border-gray-100 z-50 `}>
+        <div className={`${fixed ? 'fixed ' : ""} bg-gray-900 w-full  border-b-2 - border-double border-gray-100 z-50 `}>
 
             <nav className=" text-xl font-normal flex flex-wrap max-w-screen-2xl w-full mx-auto items-center justify-center p-4">
 
                 <div className=" w-auto order-0 lg:order-2 lg:w-1/5 lg:text-center">
-                    <Link className="text-xl font-semibold  font-heading" href="/">
-                        <Image src={logo} alt="logo" width={100} className="mx-auto" />
+                    <Link href="/">
+                        <figure className='bg-gray-100/80 w-fit mx-auto rounded-full px-4'>
+
+                            <Image loading='lazy'src={logo} alt="logo" width={100} className="mx-auto" />
+                        </figure>
                     </Link>
                 </div>
                 <div className="order-1 lg:hidden flex ">
                     <button className="flex items-center py-2 text-white border border-gray-500 rounded navbar-burger" onClick={() => setShowMenu(!showMenu)}>
-                        <FontAwesomeIcon icon={showMenu ? faTimes: faBars} className='text-gray-100 text-2xl' /> </button>
+                        <FontAwesomeIcon icon={showMenu ? faTimes : faBars} className='text-gray-100 text-2xl' /> </button>
                 </div>
                 <div className="w-full hidden navbar-menu lg:order-1 lg:flex lg:flex-row lg:gap-8 md:justify-end md:w-2/5 md:text-right">
                     {nav1.map((link, index) => {
@@ -64,7 +67,7 @@ const Nav = ({ nav1, nav2 }) => {
                     })}
                 </div>
                 <div className={(showMenu ? "animate__animated animate__slideInDown bg-gray-800 lg:hidden " : "hidden ") + "fixed z-50 top-0 left-0 flex flex-col justify-center items-center h-screen  right-0 lg:hidden w-full "}>
-                    <button className='absolute top-4 right-4' onClick={()=>setShowMenu(!showMenu)}><FontAwesomeIcon icon={faTimes} size='2x' className='text-gray-100' /> </button>
+                    <button className='absolute top-4 right-4' onClick={() => setShowMenu(!showMenu)}><FontAwesomeIcon icon={faTimes} size='2x' className='text-gray-100' /> </button>
                     {nav1.concat(nav2).map((item, index) => (<Link key={index} className="block mt-4 text-gray-100 lg:inline-block lg:mt-0 hover:text-gray-600" onClick={() => setShowMenu(!showMenu)} href={item.href}>
                         {item.label}
                     </Link>))}

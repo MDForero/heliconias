@@ -28,7 +28,7 @@ export default function page() {
                     return item.category != 'bebidas' && item.category != 'adicionales' ?
 
                         <section key={index} className="border-separate z-0 relative flex md:flex-row  text-gray-100 md:flex-nowrap flex-wrap   justify-center items-center  gap-3 even:flex-row-reverse border-spacing-6  max-w-screen-2xl xl:px-24 md:py-32 mx-auto  ">
-                            <Image src={item.img} alt={'imagen de la categoria' + item.category} width={0} height={0} className="lg:w-[500px] lg:h-[500px] lg:block hidden rounded-full" />
+                            <Image loading='lazy'src={item.img} alt={'imagen de la categoria' + item.category} width={0} height={0} className="lg:w-[500px] lg:h-[500px] lg:block hidden rounded-full" />
                             <div className="lg:w-3/5 px-1">
                                 <h1 className="text-3xl text-center pt-4 mb-4  first-letter:capitalize">{item.category}</h1>
                                 <div className="flex flex-row mx-auto flex-wrap w-full gap-2">

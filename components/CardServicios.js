@@ -8,7 +8,7 @@ const CardServicios = ({ data, even }) => {
                 <h2 className='font-bold text-center text-gray-100 text-2xl py-4'>{data.title}</h2>
                 <p className='text-gray-300'>{data.descripcion}</p>
             </div>
-            <Image src={data.img? data.img : defaultservices}  alt={data.alt? data.alt : "pendiente de imagen descriptiva"} width={0} height={0} className={`w-4/5 md:w-2/6 shadow-2xl rounded-full md:rounded-none ${even%2==0?'shadow-green-500/90':'shadow-green-500/50'}`} />
+            <Image loading='lazy'src={data.img? data.img : defaultservices}  alt={data.alt? data.alt : "pendiente de imagen descriptiva"} width={0} height={0} className={`w-4/5 md:w-2/6 shadow-2xl rounded-full md:rounded-none ${even%2==0?'shadow-green-500/90':'shadow-green-500/50'}`} />
             <p className='text-gray-300 md:hidden'>{data.descripcion}</p>
         </div>
     )

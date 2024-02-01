@@ -1,8 +1,5 @@
 import Acomodaciones from "@/components/Acomodaciones";
-
-import heliconia from "../../public/mision.jpg"
 import Image from "next/image";
-import fondo from "../../public/fondos/alojamiento.jpg";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 import { acomodaciones } from "@/data/data"
@@ -41,7 +38,7 @@ const text = {
 export default function page() {
     return (
         <div className=" text-gray-200 text-justify pb-16">
-            <Banner fondo={fondo} imgPosition={'bottom'} />
+            <Banner fondo={'/fondos/alojamiento.jpg'} imgPosition={'bottom'} />
             <section className="max-w-screen-xl flex flex-col gap-20 mx-auto my-14 text-lg">
                 <WhyUs data={text.data} title={text.title} />
                 {acomodaciones.map((item, index) => (<Acomodaciones acomodaciones={item} key={index} />))}

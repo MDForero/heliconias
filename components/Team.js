@@ -19,7 +19,7 @@ const Team = () => {
                         <div className="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                             {colaborador.img &&
                                 <div className="relative block">
-                                    <Image alt="profile" src={colaborador.img} className="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white " />
+                                    <Image loading='lazy'alt="profile" src={colaborador.img} className="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white " />
                                 </div>
                             }
                         </div>

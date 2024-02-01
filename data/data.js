@@ -303,7 +303,7 @@ export const menu = [
             {
                 descripcion: "Cazuela de mariscos: acompañada de patacón, arroz blanco, aguacate y limón              ",
                 precio: 45000.,
-                img: '/menu/cazuela-de-mariscos.png'
+                img: '/menu/cazuela-de-mariscos.jpeg'
             },
             {
                 descripcion: "Cazuela de bagre en salsa (400g): acompañados con yuca en salsa, arroz blanco, patacón y ensalada.",
@@ -344,22 +344,22 @@ export const menu = [
             {
                 descripcion: "Trucha en salsa de camarones (500g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000,
-                img: '/menu/Trucha-salsa-camarones.png'
+                img: '/menu/trucha-camarones.jpeg'
             }]
     },
     {
         category: "Sancocho de Gallina ",
-        img: '/defaultmenu.JPG',
+        img: '/menu/sancocho.jpeg',
         items: [
             {
                 descripcion: "Sancocho de Gallina campesina para 6 personas: 6 platos de sancocho, acompañados con una gallina campesina, arroz con menudencias, arepas boyacenses, aguacate, una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img: '/menu/Sancocho-gallina.png'
+                img: '/menu/sancocho.jpeg'
             },
             {
                 descripcion: "consomé de Gallina campesina para 6 personas: 6 platos de consomé, acompañados con una gallina campesina dorada, arroz con menudencias, guatila, ahuyama, mazorca y una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img: '/menu/Sancocho-gallina.png'
+                img: '/menu/consome-gallina.jpeg'
             }]
     },
     {
@@ -380,17 +380,17 @@ export const menu = [
 
     {
         category: 'Desayuno tipo americano',
+        img: '/menu/combo-1.jpeg',
         items: [
-            { descripcion: 'Combo 1 Huevos acompañados con pan, bebida fría o caliente, Pericos, Fritos, Batidos', precio: 10000, img: "/defaultmenu.JPG" },
-            { descripcion: 'Combo 2 Suprema de fruta, acompañada de bebida fría o caliente, Papaya, Mango, Patilla ', precio: 10000, img: "/defaultmenu.JPG" },],
-        img: '/menu/Hamburguesa.png'
+            { descripcion: 'Combo 1 Huevos acompañados con pan, bebida fría o caliente, Pericos, Fritos, Batidos', precio: 10000, img: "/menu/combo-1.jpeg"},
+            { descripcion: 'Combo 2 Suprema de fruta, acompañada de bebida fría o caliente, Papaya, Mango, Patilla ', precio: 10000, img: "/menu/combo-2.jpeg" },],
     },
     {
         category: 'Desayuno especial',
-        img: '/defaultmenu.JPG',
+        img: '/menu/IMG_5381.jpeg',
         items: [
             { descripcion: 'Combo 3 Caldo de cachama, acompañado de arepa, bandeja, Carne en bisté, Arroz , Ensalada, bebida fría o caliente', precio: 18000, img: "/defaultmenu.JPG" },
-            { descripcion: 'Combo 4 Caldo de costilla, acompañado de arepa, huevos., champiñones, rancheros, maíz, bebida fría o caliente', precio: 18000, img: "/defaultmenu.JPG" },
+            { descripcion: 'Combo 4 Caldo de costilla, acompañado de arepa, huevos., champiñones, rancheros, maíz, bebida fría o caliente', precio: 18000, img: "/menu/IMG_5381.jpeg" },
             { descripcion: 'Combo 5 Changua, acompañado de tostadas, Hallaca , Bebida fría o caliente ', precio: 18000, img: "/defaultmenu.JPG" },
         ],
     },
@@ -625,7 +625,7 @@ export const servicios = [
     {
         title: "Sendero ecológico:",
         descripcion: "Caminar en medio de la naturaleza, disponemos de un sendero interpretativo, que te invita a disfrutar de todas las bondades de la naturaleza y la vegetación en un ambiente de tranquilidad al aire puro. ",
-        img: '/servicios/piscina.jpg',
+        img: '/servicios/sendero.jpeg',
     },
     {
         title: "Tienda campesina:",
@@ -645,7 +645,7 @@ export const servicios = [
     {
         title: "Cabalgatas:",
         descripcion: "convivir con la naturaleza mientras montas un caballo, una experiencia única con los mejores caballos de la región, disfruta de esta actividad a pocos kilómetros de nuestra ubicación en rancho equino el morichal.",
-        img: '/servicios/piscina.jpg',
+        img: '/servicios/cabalgatas.jpeg',
     }
 ]
 

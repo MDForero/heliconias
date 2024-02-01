@@ -53,7 +53,7 @@ export default function Home() {
     </Script>
     <main className=" relative min-h-screen w-full mb-32 mdÑmb-0 h-[450px] bg-inicio">
       <div className='absolute top-0 right-0 w-full flex flex-col justify-center h-full items-center bg-gray-400/60'>
-        <Image src='/logo.png' alt='logo' width={300} height={300} className=' ' />
+        <Image loading='lazy'src='/logo.png' alt='logo' width={300} height={300} className=' ' />
         <div className='max-w-3xl flex text-white  flex-col justify-center items-center text-center gap-2 text-xl'>
           <p className=' font-bold text-3xl'>¡Descubre el Paraíso Natural en Centro Agroecoturístico Las Heliconias!</p>
           <p className=' font-bold '>¡¡Reserva Ahora y Vive una Experiencia Única!!</p>

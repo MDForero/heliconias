@@ -11,7 +11,7 @@ const WhyUs = ({data, title}) => {
         <section className='flex lg:flex-row w-full px-4 flex-col gap-8 justify-evenly items-center'>
             <div className='relative imgwhyus ' >
 
-            <Image  src={active.img} width={0} height={0} className=' w-full max-w-[600px] max-h-[400px] xl:h-[400px] xl:w-[600px] object-cover z-50' id='img'  />
+            <Image loading='lazy' src={active.img} width={0} height={0} className=' w-full max-w-[600px] max-h-[400px] xl:h-[400px] xl:w-[600px] object-cover z-50' id='img'  />
             </div>
             <div className=' lg:w-2/5 w-full px-4  text-justify text-gray-200'>
                 <header>
