@@ -31,17 +31,17 @@ const Galeria = ({galeria}) => {
   return (
     <div className='w-[95%] mx-auto '>
       {img &&
-        <section className='fixed z-50 h-90hv w-full  left-0 top-0 bg-gray-300/80'>
+        <section className='fixed z-50 h-90hv w-full  left-0 top-0 bg-gray-800/80'>
           <div className='flex justify-around  h-screen items-center relative'>
             <button onClick={() => handleClickLeft()} className='place-self-center  rounded-full h-12 w-12'>
-              <FontAwesomeIcon icon={faArrowCircleLeft} size='xl' />
+              <FontAwesomeIcon icon={faArrowCircleLeft} size='xl' className='text-white'/>
             </button>
-            <Image loading='lazy'src={img.src} width={0} height={0} alt={img.alt} className='w-full object-cover h-[600px]' />
+            <Image loading='lazy'src={img.src} width={0} height={0} alt={img.alt} className='max-w-4xl  w-full object-cover' />
             <button onClick={() => handleClickRight()} className='place-self-center  object-cover rounded-full h-12 w-12'>
-              <FontAwesomeIcon icon={faArrowAltCircleRight} size='xl' />
+              <FontAwesomeIcon icon={faArrowAltCircleRight} size='2xl' className='text-white'/>
             </button>
             <button onClick={() => setImg()} className='absolute top-0 right-2 ring ring-black rounded-full h-12 w-12'>
-              <FontAwesomeIcon icon={faClose} size='xl' />
+              <FontAwesomeIcon icon={faClose} size='2xl' className='text-white'/>
             </button>
           </div>
         </section>}

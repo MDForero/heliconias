@@ -22,18 +22,6 @@ export const imgs = [
         alt: "fotos de las habitaciones para la galeria"
     },
     {
-        src: '/habitaciones/IMG_1253.JPG',
-        alt: "fotos de las habitaciones para la galeria"
-    },
-    {
-        src: '/habitaciones/banos.JPG',
-        alt: "fotos de las habitaciones para la galeria"
-    },
-    {
-        src: '/habitaciones/doble1.JPG',
-        alt: "fotos de las habitaciones para la galeria"
-    },
-    {
         src: '/habitaciones/doble2.JPG',
         alt: "fotos de las habitaciones para la galeria"
     },
@@ -45,30 +33,7 @@ export const imgs = [
         src: '/habitaciones/multifamiliar2.JPG',
         alt: "fotos de las habitaciones para la galeria"
     },
-    {
-        src: '/fondos/photo1691765475.jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
-    {
-        src: '/fondos/photo1691765475 (1).jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
-    {
-        src: '/fondos/photo1691765473.jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
-    {
-        src: '/fondos/photo1691765473 (2).jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
-    {
-        src: '/fondos/photo1691765473 (1).jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
-    {
-        src: '/fondos/photo1691764047.jpeg',
-        alt: '/galeria/Imagen correspondiente a la galeria'
-    },
+    
     {
         src: '/fondos/nosotros.JPG',
         alt: '/galeria/Imagen correspondiente a la galeria'
@@ -344,22 +309,22 @@ export const menu = [
             {
                 descripcion: "Trucha en salsa de camarones (500g): acompañada con camarones, papa a la francesa, patacón, arroz blanco y ensalada.",
                 precio: 35000,
-                img: '/menu/trucha-camarones.jpeg'
+                img: '/menu/trucha-salsa-camarones.png'
             }]
     },
     {
         category: "Sancocho de Gallina ",
-        img: '/menu/sancocho.jpeg',
+        img: '/menu/Sancocho-gallina.png',
         items: [
             {
                 descripcion: "Sancocho de Gallina campesina para 6 personas: 6 platos de sancocho, acompañados con una gallina campesina, arroz con menudencias, arepas boyacenses, aguacate, una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img: '/menu/sancocho.jpeg'
+                img: '/menu/Sancocho-gallina.png'
             },
             {
                 descripcion: "consomé de Gallina campesina para 6 personas: 6 platos de consomé, acompañados con una gallina campesina dorada, arroz con menudencias, guatila, ahuyama, mazorca y una jarra de limonada. (reservar un día antes).",
                 precio: 170000,
-                img: '/menu/consome-gallina.jpeg'
+                img: '/menu/consome-gallina.JPG'
             }]
     },
     {
@@ -383,14 +348,14 @@ export const menu = [
         img: '/menu/combo-1.jpeg',
         items: [
             { descripcion: 'Combo 1 Huevos acompañados con pan, bebida fría o caliente, Pericos, Fritos, Batidos', precio: 10000, img: "/menu/combo-1.jpeg"},
-            { descripcion: 'Combo 2 Suprema de fruta, acompañada de bebida fría o caliente, Papaya, Mango, Patilla ', precio: 10000, img: "/menu/combo-2.jpeg" },],
+            { descripcion: 'Combo 2 Suprema de fruta, acompañada de bebida fría o caliente, Papaya, Mango, Patilla ', precio: 10000, img: "/menu/combo-2.JPG" },],
     },
     {
         category: 'Desayuno especial',
-        img: '/menu/IMG_5381.jpeg',
+        img: '/menu/combo-4.JPG',
         items: [
             { descripcion: 'Combo 3 Caldo de cachama, acompañado de arepa, bandeja, Carne en bisté, Arroz , Ensalada, bebida fría o caliente', precio: 18000, img: "/defaultmenu.JPG" },
-            { descripcion: 'Combo 4 Caldo de costilla, acompañado de arepa, huevos., champiñones, rancheros, maíz, bebida fría o caliente', precio: 18000, img: "/menu/IMG_5381.jpeg" },
+            { descripcion: 'Combo 4 Caldo de costilla, acompañado de arepa, huevos., champiñones, rancheros, maíz, bebida fría o caliente', precio: 18000, img: "/menu/combo-4.JPG" },
             { descripcion: 'Combo 5 Changua, acompañado de tostadas, Hallaca , Bebida fría o caliente ', precio: 18000, img: "/defaultmenu.JPG" },
         ],
     },
@@ -625,7 +590,7 @@ export const servicios = [
     {
         title: "Sendero ecológico:",
         descripcion: "Caminar en medio de la naturaleza, disponemos de un sendero interpretativo, que te invita a disfrutar de todas las bondades de la naturaleza y la vegetación en un ambiente de tranquilidad al aire puro. ",
-        img: '/servicios/sendero.jpeg',
+        img: '/servicios/sendero.JPG',
     },
     {
         title: "Tienda campesina:",

@@ -14,7 +14,7 @@ export default function page() {
         <div>
             <Banner fondo={'/galeria/galeria9.JPG'} />
             <div className="py-8">
-                <Galeria />
+                <Galeria  />
             </div>
         </div>
     )
